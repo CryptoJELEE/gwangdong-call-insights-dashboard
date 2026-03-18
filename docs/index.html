@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALL Insight Dashboard</title>
+    <meta
+      name="description"
+      content="로우데이터 기반으로 사업부, 지점, 담당자, 품목, 방문 깊이를 한 번에 읽는 CALL 인사이트 대시보드"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Raw Data Driven</p>
+          <h1>CALL Insight Dashboard</h1>
+          <p class="hero-text">
+            구현양식의 표를 그대로 복사하지 않고, 로우데이터를 바로 읽어서
+            성과, 편중, 반복 방문, 액션 우선순위를 한 화면에 묶었습니다.
+          </p>
+        </div>
+        <div class="hero-panel" id="meta-panel"></div>
+      </header>
+
+      <nav class="topbar">
+        <div class="topbar-group" id="division-filter"></div>
+        <a class="source-link" href="https://docs.google.com/spreadsheets/d/1foa_shUb1JJuDxkb_iFYY8qpXTOLZYhF/edit?gid=1471550893#gid=1471550893" target="_blank" rel="noreferrer">원본 시트 열기</a>
+      </nav>
+
+      <main id="app" class="page-grid">
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Insight Center</p>
+              <h2>지금 바로 읽히는 신호</h2>
+            </div>
+          </div>
+          <div class="insight-grid" id="insight-grid"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Snapshot</p>
+              <h2>핵심 지표</h2>
+            </div>
+          </div>
+          <div class="kpi-grid" id="kpi-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Monthly Rhythm</p>
+              <h2>일자별 콜 흐름</h2>
+            </div>
+          </div>
+          <div id="daily-chart" class="daily-chart"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Visit Depth</p>
+              <h2>반복 방문 구조</h2>
+            </div>
+          </div>
+          <div id="visit-depth" class="visit-depth"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Organization</p>
+              <h2>사업부와 지점 온도</h2>
+            </div>
+          </div>
+          <div id="division-cards" class="division-grid"></div>
+          <div id="branch-table" class="data-table"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Product Mix</p>
+              <h2>품목 / SOV</h2>
+            </div>
+          </div>
+          <div id="product-list" class="bar-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Specialty Mix</p>
+              <h2>진료과 분포</h2>
+            </div>
+          </div>
+          <div id="specialty-list" class="bar-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Top Reps</p>
+              <h2>현장 리더보드</h2>
+            </div>
+          </div>
+          <div id="rep-list" class="rep-list"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Focus Risk</p>
+              <h2>편중 리스크 후보</h2>
+            </div>
+          </div>
+          <div id="focus-list" class="focus-list"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Mapping</p>
+              <h2>구현양식 항목 매핑</h2>
+            </div>
+          </div>
+          <div id="mapping-grid" class="mapping-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

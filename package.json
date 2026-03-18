@@ -1,0 +1,8 @@
+{
+  "name": "gwangdong-call-insights-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs"
+  }
+}

@@ -1,0 +1,4853 @@
+{
+  "meta": {
+    "title": "CALL Insight Dashboard",
+    "month": "2025-10",
+    "snapshotAt": "2026-03-18T08:38:01.871Z",
+    "source": "Google Sheets raw data (gid=1471550893)",
+    "sourceRows": 86958,
+    "uniqueReps": 159,
+    "uniqueBranches": 21,
+    "uniqueProducts": 107,
+    "uniqueAccounts": 12523,
+    "activeDays": 18
+  },
+  "kpis": {
+    "totalCalls": 86958,
+    "avgCallsPerRep": 546.9,
+    "avgCallsPerDay": 4831,
+    "unlabeledProductShare": 20.6,
+    "repeatAccountClusters": 12308
+  },
+  "divisionCards": [
+    {
+      "name": "ETC영업부문",
+      "calls": 66410,
+      "share": 76.4,
+      "branches": 14,
+      "reps": 115,
+      "accounts": 8874,
+      "avgCallsPerRep": 577.5,
+      "topProduct": "미분류",
+      "topProductShare": 21.2
+    },
+    {
+      "name": "백신영업부문",
+      "calls": 20548,
+      "share": 23.6,
+      "branches": 7,
+      "reps": 44,
+      "accounts": 3649,
+      "avgCallsPerRep": 467,
+      "topProduct": "미분류",
+      "topProductShare": 18.6
+    }
+  ],
+  "dailySeries": [
+    {
+      "date": "2025-10-01",
+      "label": "10-01",
+      "calls": 4433,
+      "divisions": {
+        "ETC영업부문": 3145,
+        "백신영업부문": 1288
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "label": "10-02",
+      "calls": 2455,
+      "divisions": {
+        "ETC영업부문": 2053,
+        "백신영업부문": 402
+      }
+    },
+    {
+      "date": "2025-10-10",
+      "label": "10-10",
+      "calls": 288,
+      "divisions": {
+        "ETC영업부문": 161,
+        "백신영업부문": 127
+      }
+    },
+    {
+      "date": "2025-10-13",
+      "label": "10-13",
+      "calls": 3536,
+      "divisions": {
+        "ETC영업부문": 2676,
+        "백신영업부문": 860
+      }
+    },
+    {
+      "date": "2025-10-14",
+      "label": "10-14",
+      "calls": 5963,
+      "divisions": {
+        "ETC영업부문": 4729,
+        "백신영업부문": 1234
+      }
+    },
+    {
+      "date": "2025-10-15",
+      "label": "10-15",
+      "calls": 5579,
+      "divisions": {
+        "ETC영업부문": 4383,
+        "백신영업부문": 1196
+      }
+    },
+    {
+      "date": "2025-10-16",
+      "label": "10-16",
+      "calls": 861,
+      "divisions": {
+        "ETC영업부문": 637,
+        "백신영업부문": 224
+      }
+    },
+    {
+      "date": "2025-10-17",
+      "label": "10-17",
+      "calls": 4084,
+      "divisions": {
+        "ETC영업부문": 2967,
+        "백신영업부문": 1117
+      }
+    },
+    {
+      "date": "2025-10-20",
+      "label": "10-20",
+      "calls": 5959,
+      "divisions": {
+        "ETC영업부문": 4517,
+        "백신영업부문": 1442
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "label": "10-21",
+      "calls": 6112,
+      "divisions": {
+        "ETC영업부문": 4774,
+        "백신영업부문": 1338
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "label": "10-22",
+      "calls": 6055,
+      "divisions": {
+        "ETC영업부문": 4613,
+        "백신영업부문": 1442
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "label": "10-23",
+      "calls": 6235,
+      "divisions": {
+        "ETC영업부문": 4795,
+        "백신영업부문": 1440
+      }
+    },
+    {
+      "date": "2025-10-24",
+      "label": "10-24",
+      "calls": 5812,
+      "divisions": {
+        "ETC영업부문": 4501,
+        "백신영업부문": 1311
+      }
+    },
+    {
+      "date": "2025-10-27",
+      "label": "10-27",
+      "calls": 6134,
+      "divisions": {
+        "ETC영업부문": 4700,
+        "백신영업부문": 1434
+      }
+    },
+    {
+      "date": "2025-10-28",
+      "label": "10-28",
+      "calls": 6276,
+      "divisions": {
+        "ETC영업부문": 4742,
+        "백신영업부문": 1534
+      }
+    },
+    {
+      "date": "2025-10-29",
+      "label": "10-29",
+      "calls": 5875,
+      "divisions": {
+        "ETC영업부문": 4397,
+        "백신영업부문": 1478
+      }
+    },
+    {
+      "date": "2025-10-30",
+      "label": "10-30",
+      "calls": 5676,
+      "divisions": {
+        "ETC영업부문": 4315,
+        "백신영업부문": 1361
+      }
+    },
+    {
+      "date": "2025-10-31",
+      "label": "10-31",
+      "calls": 5625,
+      "divisions": {
+        "ETC영업부문": 4305,
+        "백신영업부문": 1320
+      }
+    }
+  ],
+  "branchRows": [
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 9411,
+      "share": 10.8,
+      "reps": 14,
+      "accounts": 1120,
+      "hcps": 1059,
+      "products": 42,
+      "avgCallsPerRep": 672.2,
+      "avgCallsPerAccount": 8.4,
+      "topProduct": "미분류",
+      "topProductShare": 21.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 7298,
+      "share": 8.4,
+      "reps": 10,
+      "accounts": 888,
+      "hcps": 831,
+      "products": 44,
+      "avgCallsPerRep": 729.8,
+      "avgCallsPerAccount": 8.22,
+      "topProduct": "미분류",
+      "topProductShare": 20.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 6666,
+      "share": 7.7,
+      "reps": 10,
+      "accounts": 990,
+      "hcps": 914,
+      "products": 46,
+      "avgCallsPerRep": 666.6,
+      "avgCallsPerAccount": 6.73,
+      "topProduct": "미분류",
+      "topProductShare": 27,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 5867,
+      "share": 6.7,
+      "reps": 10,
+      "accounts": 1080,
+      "hcps": 1023,
+      "products": 39,
+      "avgCallsPerRep": 586.7,
+      "avgCallsPerAccount": 5.43,
+      "topProduct": "미분류",
+      "topProductShare": 25.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 5362,
+      "share": 6.2,
+      "reps": 11,
+      "accounts": 1166,
+      "hcps": 1096,
+      "products": 30,
+      "avgCallsPerRep": 487.5,
+      "avgCallsPerAccount": 4.6,
+      "topProduct": "미분류",
+      "topProductShare": 28.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 5225,
+      "share": 6,
+      "reps": 9,
+      "accounts": 880,
+      "hcps": 851,
+      "products": 45,
+      "avgCallsPerRep": 580.6,
+      "avgCallsPerAccount": 5.94,
+      "topProduct": "미분류",
+      "topProductShare": 24.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 5183,
+      "share": 6,
+      "reps": 8,
+      "accounts": 640,
+      "hcps": 596,
+      "products": 44,
+      "avgCallsPerRep": 647.9,
+      "avgCallsPerAccount": 8.1,
+      "topProduct": "미분류",
+      "topProductShare": 19.3,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 4927,
+      "share": 5.7,
+      "reps": 8,
+      "accounts": 559,
+      "hcps": 533,
+      "products": 31,
+      "avgCallsPerRep": 615.9,
+      "avgCallsPerAccount": 8.81,
+      "topProduct": "미분류",
+      "topProductShare": 24.3,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 4774,
+      "share": 5.5,
+      "reps": 9,
+      "accounts": 840,
+      "hcps": 766,
+      "products": 32,
+      "avgCallsPerRep": 530.4,
+      "avgCallsPerAccount": 5.68,
+      "topProduct": "미분류",
+      "topProductShare": 28.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 3431,
+      "share": 3.9,
+      "reps": 7,
+      "accounts": 267,
+      "hcps": 229,
+      "products": 37,
+      "avgCallsPerRep": 490.1,
+      "avgCallsPerAccount": 12.85,
+      "topProduct": "아렉스비",
+      "topProductShare": 19.3,
+      "topSpecialty": "정형외과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 3351,
+      "share": 3.9,
+      "reps": 7,
+      "accounts": 52,
+      "hcps": 48,
+      "products": 22,
+      "avgCallsPerRep": 478.7,
+      "avgCallsPerAccount": 64.44,
+      "topProduct": "베니톨정",
+      "topProductShare": 24.1,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 3318,
+      "share": 3.8,
+      "reps": 7,
+      "accounts": 628,
+      "hcps": 606,
+      "products": 39,
+      "avgCallsPerRep": 474,
+      "avgCallsPerAccount": 5.28,
+      "topProduct": "미분류",
+      "topProductShare": 16.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 3291,
+      "share": 3.8,
+      "reps": 6,
+      "accounts": 623,
+      "hcps": 605,
+      "products": 32,
+      "avgCallsPerRep": 548.5,
+      "avgCallsPerAccount": 5.28,
+      "topProduct": "미분류",
+      "topProductShare": 19.9,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 3287,
+      "share": 3.8,
+      "reps": 8,
+      "accounts": 506,
+      "hcps": 480,
+      "products": 47,
+      "avgCallsPerRep": 410.9,
+      "avgCallsPerAccount": 6.5,
+      "topProduct": "미분류",
+      "topProductShare": 16.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 3089,
+      "share": 3.6,
+      "reps": 6,
+      "accounts": 456,
+      "hcps": 375,
+      "products": 28,
+      "avgCallsPerRep": 514.8,
+      "avgCallsPerAccount": 6.77,
+      "topProduct": "미분류",
+      "topProductShare": 22.4,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 2891,
+      "share": 3.3,
+      "reps": 6,
+      "accounts": 428,
+      "hcps": 396,
+      "products": 30,
+      "avgCallsPerRep": 481.8,
+      "avgCallsPerAccount": 6.75,
+      "topProduct": "미분류",
+      "topProductShare": 20.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전북지점",
+      "calls": 2703,
+      "share": 3.1,
+      "reps": 4,
+      "accounts": 293,
+      "hcps": 252,
+      "products": 23,
+      "avgCallsPerRep": 675.8,
+      "avgCallsPerAccount": 9.23,
+      "topProduct": "미분류",
+      "topProductShare": 19.3,
+      "topSpecialty": "미분류"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 2487,
+      "share": 2.9,
+      "reps": 6,
+      "accounts": 648,
+      "hcps": 618,
+      "products": 29,
+      "avgCallsPerRep": 414.5,
+      "avgCallsPerAccount": 3.84,
+      "topProduct": "싱그릭스",
+      "topProductShare": 16.1,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신대구경북지점",
+      "calls": 2185,
+      "share": 2.5,
+      "reps": 5,
+      "accounts": 360,
+      "hcps": 329,
+      "products": 28,
+      "avgCallsPerRep": 437,
+      "avgCallsPerAccount": 6.07,
+      "topProduct": "미분류",
+      "topProductShare": 24,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울1지점",
+      "calls": 1892,
+      "share": 2.2,
+      "reps": 5,
+      "accounts": 31,
+      "hcps": 31,
+      "products": 15,
+      "avgCallsPerRep": 378.4,
+      "avgCallsPerAccount": 61.03,
+      "topProduct": "아렉스비",
+      "topProductShare": 23.6,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "division": "ETC영업부문",
+      "department": "ETC영업3부문",
+      "branch": "ETC영업3본부",
+      "calls": 320,
+      "share": 0.4,
+      "reps": 3,
+      "accounts": 68,
+      "hcps": 68,
+      "products": 3,
+      "avgCallsPerRep": 106.7,
+      "avgCallsPerAccount": 4.71,
+      "topProduct": "아이톡씨엠씨점안액1(1회용)",
+      "topProductShare": 79.4,
+      "topSpecialty": "안과"
+    }
+  ],
+  "repRows": [
+    {
+      "repId": "10068",
+      "name": "정충화",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전북지점",
+      "calls": 1143,
+      "accounts": 110,
+      "hcps": 100,
+      "products": 11,
+      "activeDays": 15,
+      "avgCallsPerAccount": 10.39,
+      "topProduct": "미분류",
+      "topProductShare": 19.8,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "24017",
+      "name": "지현우",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 976,
+      "accounts": 106,
+      "hcps": 105,
+      "products": 21,
+      "activeDays": 15,
+      "avgCallsPerAccount": 9.21,
+      "topProduct": "미분류",
+      "topProductShare": 21.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "22182",
+      "name": "조유빈",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 966,
+      "accounts": 94,
+      "hcps": 91,
+      "products": 31,
+      "activeDays": 14,
+      "avgCallsPerAccount": 10.28,
+      "topProduct": "미분류",
+      "topProductShare": 19.8,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "16112",
+      "name": "원준호",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 965,
+      "accounts": 107,
+      "hcps": 106,
+      "products": 16,
+      "activeDays": 15,
+      "avgCallsPerAccount": 9.02,
+      "topProduct": "미분류",
+      "topProductShare": 20.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "22103",
+      "name": "이진호",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 897,
+      "accounts": 118,
+      "hcps": 115,
+      "products": 29,
+      "activeDays": 14,
+      "avgCallsPerAccount": 7.6,
+      "topProduct": "아렉스비",
+      "topProductShare": 19.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24063",
+      "name": "허정",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 877,
+      "accounts": 132,
+      "hcps": 127,
+      "products": 11,
+      "activeDays": 11,
+      "avgCallsPerAccount": 6.64,
+      "topProduct": "미분류",
+      "topProductShare": 22.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16131",
+      "name": "정성현",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 874,
+      "accounts": 81,
+      "hcps": 76,
+      "products": 10,
+      "activeDays": 15,
+      "avgCallsPerAccount": 10.79,
+      "topProduct": "미분류",
+      "topProductShare": 18,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24011",
+      "name": "함명광",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 860,
+      "accounts": 107,
+      "hcps": 102,
+      "products": 10,
+      "activeDays": 15,
+      "avgCallsPerAccount": 8.04,
+      "topProduct": "아렉스비",
+      "topProductShare": 26.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15082",
+      "name": "이상준",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 857,
+      "accounts": 122,
+      "hcps": 121,
+      "products": 22,
+      "activeDays": 11,
+      "avgCallsPerAccount": 7.02,
+      "topProduct": "미분류",
+      "topProductShare": 18.3,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "13046",
+      "name": "이진호",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 844,
+      "accounts": 107,
+      "hcps": 105,
+      "products": 30,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.89,
+      "topProduct": "미분류",
+      "topProductShare": 21.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24038",
+      "name": "김정연",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 833,
+      "accounts": 66,
+      "hcps": 63,
+      "products": 9,
+      "activeDays": 14,
+      "avgCallsPerAccount": 12.62,
+      "topProduct": "미분류",
+      "topProductShare": 24,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "24044",
+      "name": "문경록",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 822,
+      "accounts": 71,
+      "hcps": 70,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 11.58,
+      "topProduct": "싱그릭스",
+      "topProductShare": 21.3,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "13051",
+      "name": "박찬",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 808,
+      "accounts": 91,
+      "hcps": 89,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 8.88,
+      "topProduct": "미분류",
+      "topProductShare": 23,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15014",
+      "name": "최철종",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 796,
+      "accounts": 97,
+      "hcps": 72,
+      "products": 15,
+      "activeDays": 14,
+      "avgCallsPerAccount": 8.21,
+      "topProduct": "미분류",
+      "topProductShare": 19.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "22191",
+      "name": "오철환",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전북지점",
+      "calls": 765,
+      "accounts": 106,
+      "hcps": 86,
+      "products": 14,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.22,
+      "topProduct": "미분류",
+      "topProductShare": 18.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "11046",
+      "name": "이기용",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 749,
+      "accounts": 84,
+      "hcps": 79,
+      "products": 16,
+      "activeDays": 15,
+      "avgCallsPerAccount": 8.92,
+      "topProduct": "미분류",
+      "topProductShare": 24.8,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "15031",
+      "name": "최용수",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 748,
+      "accounts": 16,
+      "hcps": 16,
+      "products": 17,
+      "activeDays": 14,
+      "avgCallsPerAccount": 46.75,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 24.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "25027",
+      "name": "황인선",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 730,
+      "accounts": 76,
+      "hcps": 66,
+      "products": 37,
+      "activeDays": 14,
+      "avgCallsPerAccount": 9.61,
+      "topProduct": "미분류",
+      "topProductShare": 19.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24037",
+      "name": "심창민",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 730,
+      "accounts": 65,
+      "hcps": 61,
+      "products": 12,
+      "activeDays": 12,
+      "avgCallsPerAccount": 11.23,
+      "topProduct": "미분류",
+      "topProductShare": 20.3,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "24015",
+      "name": "김영경",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 726,
+      "accounts": 114,
+      "hcps": 107,
+      "products": 20,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.37,
+      "topProduct": "미분류",
+      "topProductShare": 25.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16095",
+      "name": "박순범",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 725,
+      "accounts": 86,
+      "hcps": 85,
+      "products": 15,
+      "activeDays": 15,
+      "avgCallsPerAccount": 8.43,
+      "topProduct": "미분류",
+      "topProductShare": 20.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "11057",
+      "name": "이상윤",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 723,
+      "accounts": 126,
+      "hcps": 118,
+      "products": 23,
+      "activeDays": 13,
+      "avgCallsPerAccount": 5.74,
+      "topProduct": "미분류",
+      "topProductShare": 25.3,
+      "topSpecialty": "GP(일반의)"
+    },
+    {
+      "repId": "14018",
+      "name": "주경인",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 722,
+      "accounts": 103,
+      "hcps": 99,
+      "products": 16,
+      "activeDays": 14,
+      "avgCallsPerAccount": 7.01,
+      "topProduct": "미분류",
+      "topProductShare": 23.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16116",
+      "name": "이권정",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 713,
+      "accounts": 90,
+      "hcps": 87,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.92,
+      "topProduct": "미분류",
+      "topProductShare": 27.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "23097",
+      "name": "이도홍",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 710,
+      "accounts": 116,
+      "hcps": 113,
+      "products": 20,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.12,
+      "topProduct": "미분류",
+      "topProductShare": 20.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "08012",
+      "name": "구세주",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 710,
+      "accounts": 91,
+      "hcps": 87,
+      "products": 18,
+      "activeDays": 10,
+      "avgCallsPerAccount": 7.8,
+      "topProduct": "미분류",
+      "topProductShare": 24.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "06103",
+      "name": "류효석",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 700,
+      "accounts": 154,
+      "hcps": 120,
+      "products": 19,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.55,
+      "topProduct": "미분류",
+      "topProductShare": 29.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "14096",
+      "name": "강태민",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 695,
+      "accounts": 92,
+      "hcps": 87,
+      "products": 22,
+      "activeDays": 13,
+      "avgCallsPerAccount": 7.55,
+      "topProduct": "미분류",
+      "topProductShare": 20,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16053",
+      "name": "장재호",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 695,
+      "accounts": 68,
+      "hcps": 63,
+      "products": 24,
+      "activeDays": 15,
+      "avgCallsPerAccount": 10.22,
+      "topProduct": "미분류",
+      "topProductShare": 15.7,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "25042",
+      "name": "임동준",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 694,
+      "accounts": 102,
+      "hcps": 100,
+      "products": 17,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.8,
+      "topProduct": "미분류",
+      "topProductShare": 34.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "25025",
+      "name": "강동현",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 692,
+      "accounts": 120,
+      "hcps": 88,
+      "products": 12,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.77,
+      "topProduct": "미분류",
+      "topProductShare": 34.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16118",
+      "name": "이동우",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 689,
+      "accounts": 14,
+      "hcps": 12,
+      "products": 16,
+      "activeDays": 14,
+      "avgCallsPerAccount": 49.21,
+      "topProduct": "미분류",
+      "topProductShare": 19.7,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "24030",
+      "name": "오병석",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 688,
+      "accounts": 87,
+      "hcps": 86,
+      "products": 17,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.91,
+      "topProduct": "싱그릭스",
+      "topProductShare": 20.6,
+      "topSpecialty": "이비인후과"
+    },
+    {
+      "repId": "24020",
+      "name": "지하은",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 675,
+      "accounts": 9,
+      "hcps": 8,
+      "products": 15,
+      "activeDays": 16,
+      "avgCallsPerAccount": 75,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 14.4,
+      "topSpecialty": "외과"
+    },
+    {
+      "repId": "23005",
+      "name": "하신욱",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 669,
+      "accounts": 105,
+      "hcps": 80,
+      "products": 23,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.37,
+      "topProduct": "미분류",
+      "topProductShare": 25.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "14017",
+      "name": "조광식",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 666,
+      "accounts": 105,
+      "hcps": 101,
+      "products": 24,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.34,
+      "topProduct": "미분류",
+      "topProductShare": 36.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24018",
+      "name": "이상후",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 666,
+      "accounts": 63,
+      "hcps": 62,
+      "products": 11,
+      "activeDays": 14,
+      "avgCallsPerAccount": 10.57,
+      "topProduct": "미분류",
+      "topProductShare": 19.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24085",
+      "name": "권우진",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 665,
+      "accounts": 84,
+      "hcps": 84,
+      "products": 18,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.92,
+      "topProduct": "미분류",
+      "topProductShare": 37.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "15051",
+      "name": "곽충환",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 664,
+      "accounts": 95,
+      "hcps": 91,
+      "products": 18,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.99,
+      "topProduct": "미분류",
+      "topProductShare": 26.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "23084",
+      "name": "이경재",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 663,
+      "accounts": 123,
+      "hcps": 114,
+      "products": 20,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.39,
+      "topProduct": "미분류",
+      "topProductShare": 20.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16104",
+      "name": "심상윤",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 661,
+      "accounts": 85,
+      "hcps": 84,
+      "products": 12,
+      "activeDays": 14,
+      "avgCallsPerAccount": 7.78,
+      "topProduct": "미분류",
+      "topProductShare": 20.1,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15088",
+      "name": "임재원",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 661,
+      "accounts": 105,
+      "hcps": 50,
+      "products": 16,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.3,
+      "topProduct": "미분류",
+      "topProductShare": 13.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "23094",
+      "name": "임무형",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 657,
+      "accounts": 139,
+      "hcps": 134,
+      "products": 20,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.73,
+      "topProduct": "미분류",
+      "topProductShare": 26.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24047",
+      "name": "김도현",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 656,
+      "accounts": 96,
+      "hcps": 94,
+      "products": 25,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.83,
+      "topProduct": "미분류",
+      "topProductShare": 29,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16213",
+      "name": "박민욱",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 644,
+      "accounts": 81,
+      "hcps": 81,
+      "products": 18,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.95,
+      "topProduct": "미분류",
+      "topProductShare": 22.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16084",
+      "name": "김정화",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 642,
+      "accounts": 94,
+      "hcps": 94,
+      "products": 16,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.83,
+      "topProduct": "싱그릭스",
+      "topProductShare": 24.5,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "23087",
+      "name": "강현욱",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 640,
+      "accounts": 78,
+      "hcps": 73,
+      "products": 14,
+      "activeDays": 15,
+      "avgCallsPerAccount": 8.21,
+      "topProduct": "로타릭스",
+      "topProductShare": 13.6,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "04048",
+      "name": "김연성",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 638,
+      "accounts": 110,
+      "hcps": 109,
+      "products": 28,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.8,
+      "topProduct": "아렉스비",
+      "topProductShare": 19.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24032",
+      "name": "강태희",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 637,
+      "accounts": 109,
+      "hcps": 100,
+      "products": 26,
+      "activeDays": 16,
+      "avgCallsPerAccount": 5.84,
+      "topProduct": "아렉스비",
+      "topProductShare": 31.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24009",
+      "name": "최형기",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 634,
+      "accounts": 70,
+      "hcps": 64,
+      "products": 13,
+      "activeDays": 11,
+      "avgCallsPerAccount": 9.06,
+      "topProduct": "아렉스비",
+      "topProductShare": 25.1,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15118",
+      "name": "선승동",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 630,
+      "accounts": 80,
+      "hcps": 80,
+      "products": 10,
+      "activeDays": 11,
+      "avgCallsPerAccount": 7.88,
+      "topProduct": "미분류",
+      "topProductShare": 21.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "18061",
+      "name": "남형준",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 629,
+      "accounts": 111,
+      "hcps": 97,
+      "products": 24,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.67,
+      "topProduct": "미분류",
+      "topProductShare": 32.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "08034",
+      "name": "황성민",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 628,
+      "accounts": 146,
+      "hcps": 135,
+      "products": 18,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.3,
+      "topProduct": "아렉스비",
+      "topProductShare": 24.4,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "13062",
+      "name": "최창욱",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 623,
+      "accounts": 85,
+      "hcps": 84,
+      "products": 28,
+      "activeDays": 15,
+      "avgCallsPerAccount": 7.33,
+      "topProduct": "미분류",
+      "topProductShare": 21.3,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16123",
+      "name": "이정희",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신대구경북지점",
+      "calls": 618,
+      "accounts": 93,
+      "hcps": 83,
+      "products": 8,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.65,
+      "topProduct": "미분류",
+      "topProductShare": 33.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "15174",
+      "name": "정순혁",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신대구경북지점",
+      "calls": 617,
+      "accounts": 109,
+      "hcps": 98,
+      "products": 12,
+      "activeDays": 16,
+      "avgCallsPerAccount": 5.66,
+      "topProduct": "아렉스비",
+      "topProductShare": 29.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "05078",
+      "name": "민지홍",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 616,
+      "accounts": 91,
+      "hcps": 91,
+      "products": 16,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.77,
+      "topProduct": "미분류",
+      "topProductShare": 28.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "06023",
+      "name": "김상환",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 616,
+      "accounts": 115,
+      "hcps": 113,
+      "products": 22,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.36,
+      "topProduct": "아렉스비",
+      "topProductShare": 22.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "23086",
+      "name": "김형준",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 613,
+      "accounts": 7,
+      "hcps": 7,
+      "products": 12,
+      "activeDays": 14,
+      "avgCallsPerAccount": 87.57,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 20.7,
+      "topSpecialty": "이비인후과"
+    },
+    {
+      "repId": "15083",
+      "name": "이수빈",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 612,
+      "accounts": 107,
+      "hcps": 105,
+      "products": 17,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.72,
+      "topProduct": "아렉스비",
+      "topProductShare": 30.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "12049",
+      "name": "최충환",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 607,
+      "accounts": 80,
+      "hcps": 75,
+      "products": 16,
+      "activeDays": 14,
+      "avgCallsPerAccount": 7.59,
+      "topProduct": "아렉스비",
+      "topProductShare": 31.8,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "15134",
+      "name": "정민구",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 605,
+      "accounts": 121,
+      "hcps": 112,
+      "products": 10,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5,
+      "topProduct": "미분류",
+      "topProductShare": 31.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15079",
+      "name": "윤동재",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 603,
+      "accounts": 104,
+      "hcps": 93,
+      "products": 12,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.8,
+      "topProduct": "미분류",
+      "topProductShare": 26.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "25026",
+      "name": "홍금표",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 600,
+      "accounts": 87,
+      "hcps": 86,
+      "products": 19,
+      "activeDays": 16,
+      "avgCallsPerAccount": 6.9,
+      "topProduct": "미분류",
+      "topProductShare": 24.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "22104",
+      "name": "김석준",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 599,
+      "accounts": 119,
+      "hcps": 116,
+      "products": 15,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.03,
+      "topProduct": "아렉스비",
+      "topProductShare": 23.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "21051",
+      "name": "최성규",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 599,
+      "accounts": 123,
+      "hcps": 120,
+      "products": 16,
+      "activeDays": 16,
+      "avgCallsPerAccount": 4.87,
+      "topProduct": "미분류",
+      "topProductShare": 22,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "14007",
+      "name": "박진수",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신대구경북지점",
+      "calls": 598,
+      "accounts": 74,
+      "hcps": 68,
+      "products": 15,
+      "activeDays": 15,
+      "avgCallsPerAccount": 8.08,
+      "topProduct": "아렉스비",
+      "topProductShare": 19.6,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "13055",
+      "name": "조장석",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 592,
+      "accounts": 105,
+      "hcps": 102,
+      "products": 28,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.64,
+      "topProduct": "아렉스비",
+      "topProductShare": 23.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16090",
+      "name": "나수빈",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 588,
+      "accounts": 6,
+      "hcps": 5,
+      "products": 12,
+      "activeDays": 15,
+      "avgCallsPerAccount": 98,
+      "topProduct": "베니톨정",
+      "topProductShare": 29.6,
+      "topSpecialty": "외과"
+    },
+    {
+      "repId": "16085",
+      "name": "김종원",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 586,
+      "accounts": 59,
+      "hcps": 57,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 9.93,
+      "topProduct": "미분류",
+      "topProductShare": 23.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24046",
+      "name": "이준호",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 585,
+      "accounts": 101,
+      "hcps": 99,
+      "products": 31,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.79,
+      "topProduct": "미분류",
+      "topProductShare": 23.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "19033",
+      "name": "김아론",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 580,
+      "accounts": 108,
+      "hcps": 97,
+      "products": 24,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.37,
+      "topProduct": "미분류",
+      "topProductShare": 25.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "15001",
+      "name": "박종국",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 572,
+      "accounts": 105,
+      "hcps": 101,
+      "products": 13,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.45,
+      "topProduct": "미분류",
+      "topProductShare": 25.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "06059",
+      "name": "홍정모",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 571,
+      "accounts": 62,
+      "hcps": 62,
+      "products": 15,
+      "activeDays": 14,
+      "avgCallsPerAccount": 9.21,
+      "topProduct": "미분류",
+      "topProductShare": 32.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15080",
+      "name": "윤지연",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 565,
+      "accounts": 83,
+      "hcps": 76,
+      "products": 24,
+      "activeDays": 12,
+      "avgCallsPerAccount": 6.81,
+      "topProduct": "로타릭스",
+      "topProductShare": 13.5,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "16137",
+      "name": "조재봉",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 558,
+      "accounts": 64,
+      "hcps": 54,
+      "products": 6,
+      "activeDays": 12,
+      "avgCallsPerAccount": 8.72,
+      "topProduct": "아렉스비",
+      "topProductShare": 34.9,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "16145",
+      "name": "고광남",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울5지점",
+      "calls": 554,
+      "accounts": 94,
+      "hcps": 91,
+      "products": 20,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.89,
+      "topProduct": "미분류",
+      "topProductShare": 28,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "97164",
+      "name": "조명국",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 554,
+      "accounts": 41,
+      "hcps": 36,
+      "products": 19,
+      "activeDays": 14,
+      "avgCallsPerAccount": 13.51,
+      "topProduct": "아렉스비",
+      "topProductShare": 20.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16132",
+      "name": "정원섭",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울1지점",
+      "calls": 553,
+      "accounts": 6,
+      "hcps": 6,
+      "products": 9,
+      "activeDays": 14,
+      "avgCallsPerAccount": 92.17,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 26.6,
+      "topSpecialty": "신장내과"
+    },
+    {
+      "repId": "16082",
+      "name": "김은지",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 550,
+      "accounts": 90,
+      "hcps": 88,
+      "products": 10,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.11,
+      "topProduct": "싱그릭스",
+      "topProductShare": 23.3,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "14011",
+      "name": "오진엽",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 542,
+      "accounts": 160,
+      "hcps": 112,
+      "products": 11,
+      "activeDays": 14,
+      "avgCallsPerAccount": 3.39,
+      "topProduct": "미분류",
+      "topProductShare": 32.5,
+      "topSpecialty": "GP(일반의)"
+    },
+    {
+      "repId": "24062",
+      "name": "임예림",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 541,
+      "accounts": 102,
+      "hcps": 100,
+      "products": 23,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.3,
+      "topProduct": "아렉스비",
+      "topProductShare": 17.4,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "16139",
+      "name": "지성민",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 540,
+      "accounts": 91,
+      "hcps": 87,
+      "products": 17,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.93,
+      "topProduct": "아렉스비",
+      "topProductShare": 40.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16075",
+      "name": "김명국",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 540,
+      "accounts": 155,
+      "hcps": 151,
+      "products": 15,
+      "activeDays": 16,
+      "avgCallsPerAccount": 3.48,
+      "topProduct": "싱그릭스",
+      "topProductShare": 20.6,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "16146",
+      "name": "이지영",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 539,
+      "accounts": 81,
+      "hcps": 81,
+      "products": 15,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.65,
+      "topProduct": "아렉스비",
+      "topProductShare": 31.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "25069",
+      "name": "최은환",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 534,
+      "accounts": 6,
+      "hcps": 6,
+      "products": 24,
+      "activeDays": 13,
+      "avgCallsPerAccount": 89,
+      "topProduct": "콘트라브 서방정",
+      "topProductShare": 13.7,
+      "topSpecialty": "산부인과"
+    },
+    {
+      "repId": "06232",
+      "name": "류해열",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 532,
+      "accounts": 52,
+      "hcps": 44,
+      "products": 24,
+      "activeDays": 14,
+      "avgCallsPerAccount": 10.23,
+      "topProduct": "베니톨정",
+      "topProductShare": 14.1,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "22160",
+      "name": "한나라",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 530,
+      "accounts": 96,
+      "hcps": 95,
+      "products": 14,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.52,
+      "topProduct": "아렉스비",
+      "topProductShare": 23.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24028",
+      "name": "방승혁",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 529,
+      "accounts": 96,
+      "hcps": 94,
+      "products": 11,
+      "activeDays": 13,
+      "avgCallsPerAccount": 5.51,
+      "topProduct": "미분류",
+      "topProductShare": 29.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "09082",
+      "name": "이도향",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 527,
+      "accounts": 28,
+      "hcps": 27,
+      "products": 22,
+      "activeDays": 14,
+      "avgCallsPerAccount": 18.82,
+      "topProduct": "아렉스비",
+      "topProductShare": 25.2,
+      "topSpecialty": "정형외과"
+    },
+    {
+      "repId": "16010",
+      "name": "강승욱",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 525,
+      "accounts": 92,
+      "hcps": 92,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 5.71,
+      "topProduct": "푸로스판시럽",
+      "topProductShare": 18.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "03027",
+      "name": "이혜인",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 524,
+      "accounts": 62,
+      "hcps": 41,
+      "products": 23,
+      "activeDays": 13,
+      "avgCallsPerAccount": 8.45,
+      "topProduct": "아렉스비",
+      "topProductShare": 20.2,
+      "topSpecialty": "외과"
+    },
+    {
+      "repId": "13027",
+      "name": "박승혁",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 522,
+      "accounts": 14,
+      "hcps": 14,
+      "products": 14,
+      "activeDays": 10,
+      "avgCallsPerAccount": 37.29,
+      "topProduct": "아렉스비",
+      "topProductShare": 23,
+      "topSpecialty": "정형외과"
+    },
+    {
+      "repId": "24035",
+      "name": "박상미",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC충청지점",
+      "calls": 519,
+      "accounts": 133,
+      "hcps": 130,
+      "products": 22,
+      "activeDays": 15,
+      "avgCallsPerAccount": 3.9,
+      "topProduct": "미분류",
+      "topProductShare": 29.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16067",
+      "name": "전대영",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 513,
+      "accounts": 79,
+      "hcps": 78,
+      "products": 19,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.49,
+      "topProduct": "미분류",
+      "topProductShare": 35.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24034",
+      "name": "손혜란",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 511,
+      "accounts": 67,
+      "hcps": 63,
+      "products": 35,
+      "activeDays": 13,
+      "avgCallsPerAccount": 7.63,
+      "topProduct": "미분류",
+      "topProductShare": 21.7,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "16135",
+      "name": "조명근",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울1지점",
+      "calls": 509,
+      "accounts": 7,
+      "hcps": 7,
+      "products": 12,
+      "activeDays": 16,
+      "avgCallsPerAccount": 72.71,
+      "topProduct": "베니톨정",
+      "topProductShare": 24.4,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "12113",
+      "name": "이용원",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 507,
+      "accounts": 7,
+      "hcps": 7,
+      "products": 16,
+      "activeDays": 16,
+      "avgCallsPerAccount": 72.43,
+      "topProduct": "베니톨정",
+      "topProductShare": 25.6,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "16117",
+      "name": "이나라",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 506,
+      "accounts": 11,
+      "hcps": 11,
+      "products": 11,
+      "activeDays": 8,
+      "avgCallsPerAccount": 46,
+      "topProduct": "미분류",
+      "topProductShare": 18.8,
+      "topSpecialty": "진단검사의학과"
+    },
+    {
+      "repId": "24010",
+      "name": "김원영",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 501,
+      "accounts": 41,
+      "hcps": 39,
+      "products": 13,
+      "activeDays": 7,
+      "avgCallsPerAccount": 12.22,
+      "topProduct": "미분류",
+      "topProductShare": 30.9,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "21098",
+      "name": "김강산",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경북지점",
+      "calls": 496,
+      "accounts": 15,
+      "hcps": 15,
+      "products": 12,
+      "activeDays": 13,
+      "avgCallsPerAccount": 33.07,
+      "topProduct": "베니톨정",
+      "topProductShare": 18.8,
+      "topSpecialty": "심장내과"
+    },
+    {
+      "repId": "13059",
+      "name": "하정호",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 492,
+      "accounts": 15,
+      "hcps": 13,
+      "products": 11,
+      "activeDays": 15,
+      "avgCallsPerAccount": 32.8,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 27.6,
+      "topSpecialty": "GP(일반의)"
+    },
+    {
+      "repId": "24036",
+      "name": "심기언",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 489,
+      "accounts": 77,
+      "hcps": 76,
+      "products": 12,
+      "activeDays": 8,
+      "avgCallsPerAccount": 6.35,
+      "topProduct": "미분류",
+      "topProductShare": 21.1,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15106",
+      "name": "김진천",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 485,
+      "accounts": 118,
+      "hcps": 118,
+      "products": 13,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.11,
+      "topProduct": "미분류",
+      "topProductShare": 28.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24014",
+      "name": "황경준",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 484,
+      "accounts": 98,
+      "hcps": 96,
+      "products": 15,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.94,
+      "topProduct": "아렉스비",
+      "topProductShare": 25.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24031",
+      "name": "채영수",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 484,
+      "accounts": 105,
+      "hcps": 102,
+      "products": 23,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.61,
+      "topProduct": "미분류",
+      "topProductShare": 17.1,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "14009",
+      "name": "배민지",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 483,
+      "accounts": 103,
+      "hcps": 97,
+      "products": 16,
+      "activeDays": 16,
+      "avgCallsPerAccount": 4.69,
+      "topProduct": "아렉스비",
+      "topProductShare": 19,
+      "topSpecialty": "이비인후과"
+    },
+    {
+      "repId": "14019",
+      "name": "허미",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 478,
+      "accounts": 105,
+      "hcps": 104,
+      "products": 21,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.55,
+      "topProduct": "아렉스비",
+      "topProductShare": 16.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "24045",
+      "name": "김영준",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전남지점",
+      "calls": 477,
+      "accounts": 40,
+      "hcps": 39,
+      "products": 13,
+      "activeDays": 9,
+      "avgCallsPerAccount": 11.93,
+      "topProduct": "미분류",
+      "topProductShare": 23.1,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "25010",
+      "name": "어유진",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 476,
+      "accounts": 96,
+      "hcps": 95,
+      "products": 21,
+      "activeDays": 16,
+      "avgCallsPerAccount": 4.96,
+      "topProduct": "싱그릭스",
+      "topProductShare": 16.6,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "14004",
+      "name": "김민규",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 474,
+      "accounts": 123,
+      "hcps": 123,
+      "products": 11,
+      "activeDays": 14,
+      "avgCallsPerAccount": 3.85,
+      "topProduct": "미분류",
+      "topProductShare": 42.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15114",
+      "name": "김인수",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 472,
+      "accounts": 76,
+      "hcps": 75,
+      "products": 18,
+      "activeDays": 15,
+      "avgCallsPerAccount": 6.21,
+      "topProduct": "미분류",
+      "topProductShare": 14.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "15069",
+      "name": "김병기",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 471,
+      "accounts": 94,
+      "hcps": 83,
+      "products": 11,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5.01,
+      "topProduct": "벡세로",
+      "topProductShare": 23.1,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "23096",
+      "name": "이정현",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전북지점",
+      "calls": 469,
+      "accounts": 70,
+      "hcps": 62,
+      "products": 19,
+      "activeDays": 9,
+      "avgCallsPerAccount": 6.7,
+      "topProduct": "미분류",
+      "topProductShare": 24.3,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "18106",
+      "name": "김동군",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 463,
+      "accounts": 93,
+      "hcps": 85,
+      "products": 17,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.98,
+      "topProduct": "미분류",
+      "topProductShare": 19.4,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "24013",
+      "name": "박수빈",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 462,
+      "accounts": 106,
+      "hcps": 103,
+      "products": 18,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.36,
+      "topProduct": "미분류",
+      "topProductShare": 24.2,
+      "topSpecialty": "산부인과"
+    },
+    {
+      "repId": "16071",
+      "name": "강석진",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 461,
+      "accounts": 8,
+      "hcps": 8,
+      "products": 14,
+      "activeDays": 15,
+      "avgCallsPerAccount": 57.63,
+      "topProduct": "베니톨정",
+      "topProductShare": 21,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "22024",
+      "name": "김정환",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울1지점",
+      "calls": 454,
+      "accounts": 7,
+      "hcps": 7,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 64.86,
+      "topProduct": "아렉스비",
+      "topProductShare": 19.2,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "15081",
+      "name": "이경학",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 453,
+      "accounts": 106,
+      "hcps": 104,
+      "products": 13,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.27,
+      "topProduct": "미분류",
+      "topProductShare": 32.9,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24027",
+      "name": "백성욱",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC경남지점",
+      "calls": 451,
+      "accounts": 87,
+      "hcps": 87,
+      "products": 10,
+      "activeDays": 11,
+      "avgCallsPerAccount": 5.18,
+      "topProduct": "미분류",
+      "topProductShare": 29.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "13014",
+      "name": "권상현",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울4지점",
+      "calls": 450,
+      "accounts": 143,
+      "hcps": 115,
+      "products": 11,
+      "activeDays": 14,
+      "avgCallsPerAccount": 3.15,
+      "topProduct": "아렉스비",
+      "topProductShare": 32.2,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "04123",
+      "name": "백주흔",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 446,
+      "accounts": 37,
+      "hcps": 37,
+      "products": 28,
+      "activeDays": 14,
+      "avgCallsPerAccount": 12.05,
+      "topProduct": "아렉스비",
+      "topProductShare": 13.2,
+      "topSpecialty": "GP(일반의)"
+    },
+    {
+      "repId": "11021",
+      "name": "문영견",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 445,
+      "accounts": 130,
+      "hcps": 126,
+      "products": 5,
+      "activeDays": 15,
+      "avgCallsPerAccount": 3.42,
+      "topProduct": "미분류",
+      "topProductShare": 49.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "23085",
+      "name": "선석길",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 443,
+      "accounts": 96,
+      "hcps": 95,
+      "products": 10,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.61,
+      "topProduct": "아렉스비",
+      "topProductShare": 32.7,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "24033",
+      "name": "이학진",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 442,
+      "accounts": 154,
+      "hcps": 119,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 2.87,
+      "topProduct": "미분류",
+      "topProductShare": 34.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "23006",
+      "name": "이재영",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 441,
+      "accounts": 96,
+      "hcps": 95,
+      "products": 13,
+      "activeDays": 13,
+      "avgCallsPerAccount": 4.59,
+      "topProduct": "아렉스비",
+      "topProductShare": 24.3,
+      "topSpecialty": "이비인후과"
+    },
+    {
+      "repId": "13102",
+      "name": "최현석",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 434,
+      "accounts": 112,
+      "hcps": 110,
+      "products": 21,
+      "activeDays": 14,
+      "avgCallsPerAccount": 3.88,
+      "topProduct": "싱그릭스",
+      "topProductShare": 17.1,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "23074",
+      "name": "권혁제",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 433,
+      "accounts": 134,
+      "hcps": 116,
+      "products": 13,
+      "activeDays": 14,
+      "avgCallsPerAccount": 3.23,
+      "topProduct": "아렉스비",
+      "topProductShare": 33.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16078",
+      "name": "김수민",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 431,
+      "accounts": 9,
+      "hcps": 7,
+      "products": 13,
+      "activeDays": 13,
+      "avgCallsPerAccount": 47.89,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 23.9,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "12061",
+      "name": "유남주",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 428,
+      "accounts": 116,
+      "hcps": 112,
+      "products": 13,
+      "activeDays": 15,
+      "avgCallsPerAccount": 3.69,
+      "topProduct": "미분류",
+      "topProductShare": 39,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "14008",
+      "name": "배서준",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 425,
+      "accounts": 8,
+      "hcps": 8,
+      "products": 10,
+      "activeDays": 14,
+      "avgCallsPerAccount": 53.13,
+      "topProduct": "콘트라브 서방정",
+      "topProductShare": 28.2,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "23082",
+      "name": "김영희",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울1지점",
+      "calls": 421,
+      "accounts": 108,
+      "hcps": 107,
+      "products": 17,
+      "activeDays": 14,
+      "avgCallsPerAccount": 3.9,
+      "topProduct": "미분류",
+      "topProductShare": 32.1,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "09027",
+      "name": "이인수",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 420,
+      "accounts": 75,
+      "hcps": 75,
+      "products": 15,
+      "activeDays": 11,
+      "avgCallsPerAccount": 5.6,
+      "topProduct": "미분류",
+      "topProductShare": 23.8,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "09026",
+      "name": "이선종",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC경기지점",
+      "calls": 419,
+      "accounts": 66,
+      "hcps": 65,
+      "products": 22,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.35,
+      "topProduct": "미분류",
+      "topProductShare": 28.6,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "15089",
+      "name": "정다은",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 417,
+      "accounts": 111,
+      "hcps": 102,
+      "products": 19,
+      "activeDays": 13,
+      "avgCallsPerAccount": 3.76,
+      "topProduct": "로타릭스",
+      "topProductShare": 13.9,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "25064",
+      "name": "남주현",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 405,
+      "accounts": 81,
+      "hcps": 78,
+      "products": 22,
+      "activeDays": 14,
+      "avgCallsPerAccount": 5,
+      "topProduct": "미분류",
+      "topProductShare": 44.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "16087",
+      "name": "김호성",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 400,
+      "accounts": 127,
+      "hcps": 124,
+      "products": 19,
+      "activeDays": 9,
+      "avgCallsPerAccount": 3.15,
+      "topProduct": "미분류",
+      "topProductShare": 17.3,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "25014",
+      "name": "김현준",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 395,
+      "accounts": 59,
+      "hcps": 59,
+      "products": 13,
+      "activeDays": 14,
+      "avgCallsPerAccount": 6.69,
+      "topProduct": "아렉스비",
+      "topProductShare": 27.6,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "13052",
+      "name": "이윤용",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 357,
+      "accounts": 71,
+      "hcps": 70,
+      "products": 9,
+      "activeDays": 13,
+      "avgCallsPerAccount": 5.03,
+      "topProduct": "미분류",
+      "topProductShare": 31.4,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "09084",
+      "name": "전보규",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신대구경북지점",
+      "calls": 349,
+      "accounts": 81,
+      "hcps": 79,
+      "products": 27,
+      "activeDays": 14,
+      "avgCallsPerAccount": 4.31,
+      "topProduct": "부스트릭스",
+      "topProductShare": 20.9,
+      "topSpecialty": "산부인과"
+    },
+    {
+      "repId": "15121",
+      "name": "장세영",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울1지점",
+      "calls": 346,
+      "accounts": 9,
+      "hcps": 9,
+      "products": 9,
+      "activeDays": 10,
+      "avgCallsPerAccount": 38.44,
+      "topProduct": "아렉스비",
+      "topProductShare": 41.9,
+      "topSpecialty": "순환기내과"
+    },
+    {
+      "repId": "16108",
+      "name": "염대현",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울3지점",
+      "calls": 334,
+      "accounts": 70,
+      "hcps": 68,
+      "products": 9,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.77,
+      "topProduct": "미분류",
+      "topProductShare": 44.3,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "16130",
+      "name": "정민규",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "전문병원지점",
+      "calls": 326,
+      "accounts": 33,
+      "hcps": 33,
+      "products": 17,
+      "activeDays": 14,
+      "avgCallsPerAccount": 9.88,
+      "topProduct": "아렉스비",
+      "topProductShare": 24.5,
+      "topSpecialty": "내과"
+    },
+    {
+      "repId": "16138",
+      "name": "조현빈",
+      "division": "ETC영업부문",
+      "department": "ETC영업2부문",
+      "branch": "ETC전북지점",
+      "calls": 326,
+      "accounts": 7,
+      "hcps": 7,
+      "products": 14,
+      "activeDays": 7,
+      "avgCallsPerAccount": 46.57,
+      "topProduct": "베니톨정",
+      "topProductShare": 19.9,
+      "topSpecialty": "외과"
+    },
+    {
+      "repId": "24019",
+      "name": "김성준",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC인천지점",
+      "calls": 322,
+      "accounts": 44,
+      "hcps": 44,
+      "products": 12,
+      "activeDays": 13,
+      "avgCallsPerAccount": 7.32,
+      "topProduct": "미분류",
+      "topProductShare": 46.9,
+      "topSpecialty": "정형외과"
+    },
+    {
+      "repId": "17108",
+      "name": "김형우",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 320,
+      "accounts": 71,
+      "hcps": 62,
+      "products": 12,
+      "activeDays": 11,
+      "avgCallsPerAccount": 4.51,
+      "topProduct": "싱그릭스",
+      "topProductShare": 16.9,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "15093",
+      "name": "천준호",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 311,
+      "accounts": 58,
+      "hcps": 56,
+      "products": 19,
+      "activeDays": 5,
+      "avgCallsPerAccount": 5.36,
+      "topProduct": "미분류",
+      "topProductShare": 18.6,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "21034",
+      "name": "정구현",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울3지점",
+      "calls": 300,
+      "accounts": 103,
+      "hcps": 98,
+      "products": 17,
+      "activeDays": 9,
+      "avgCallsPerAccount": 2.91,
+      "topProduct": "아바미스나잘스프레이",
+      "topProductShare": 17,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "15116",
+      "name": "유한열",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 296,
+      "accounts": 60,
+      "hcps": 57,
+      "products": 14,
+      "activeDays": 10,
+      "avgCallsPerAccount": 4.93,
+      "topProduct": "부스트릭스",
+      "topProductShare": 17.2,
+      "topSpecialty": "소아청소년과"
+    },
+    {
+      "repId": "25068",
+      "name": "이민재",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울2지점",
+      "calls": 264,
+      "accounts": 5,
+      "hcps": 5,
+      "products": 7,
+      "activeDays": 14,
+      "avgCallsPerAccount": 52.8,
+      "topProduct": "베니톨정",
+      "topProductShare": 45.1,
+      "topSpecialty": "가정의학과"
+    },
+    {
+      "repId": "24082",
+      "name": "이수영",
+      "division": "ETC영업부문",
+      "department": "ETC영업3부문",
+      "branch": "ETC영업3본부",
+      "calls": 122,
+      "accounts": 26,
+      "hcps": 26,
+      "products": 1,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.69,
+      "topProduct": "아이톡씨엠씨점안액1(1회용)",
+      "topProductShare": 100,
+      "topSpecialty": "안과"
+    },
+    {
+      "repId": "24080",
+      "name": "정승원",
+      "division": "ETC영업부문",
+      "department": "ETC영업3부문",
+      "branch": "ETC영업3본부",
+      "calls": 106,
+      "accounts": 26,
+      "hcps": 26,
+      "products": 3,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.08,
+      "topProduct": "아이톡씨엠씨점안액1(1회용)",
+      "topProductShare": 50,
+      "topSpecialty": "안과"
+    },
+    {
+      "repId": "24079",
+      "name": "김용",
+      "division": "ETC영업부문",
+      "department": "ETC영업3부문",
+      "branch": "ETC영업3본부",
+      "calls": 92,
+      "accounts": 16,
+      "hcps": 16,
+      "products": 3,
+      "activeDays": 11,
+      "avgCallsPerAccount": 5.75,
+      "topProduct": "아이톡씨엠씨점안액1(1회용)",
+      "topProductShare": 85.9,
+      "topSpecialty": "안과"
+    },
+    {
+      "repId": "25073",
+      "name": "황재필",
+      "division": "ETC영업부문",
+      "department": "ETC영업1부문",
+      "branch": "ETC서울1지점",
+      "calls": 30,
+      "accounts": 2,
+      "hcps": 2,
+      "products": 8,
+      "activeDays": 3,
+      "avgCallsPerAccount": 15,
+      "topProduct": "베니톨정",
+      "topProductShare": 30,
+      "topSpecialty": "신장내과"
+    },
+    {
+      "repId": "15108",
+      "name": "정병윤",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신부산경남지점",
+      "calls": 5,
+      "accounts": 5,
+      "hcps": 3,
+      "products": 2,
+      "activeDays": 2,
+      "avgCallsPerAccount": 1,
+      "topProduct": "아렉스비",
+      "topProductShare": 60,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "15113",
+      "name": "조형철",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신충청호남지점",
+      "calls": 3,
+      "accounts": 2,
+      "hcps": 1,
+      "products": 1,
+      "activeDays": 2,
+      "avgCallsPerAccount": 1.5,
+      "topProduct": "아렉스비",
+      "topProductShare": 100,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "15104",
+      "name": "전재형",
+      "division": "백신영업부문",
+      "department": "백신 지방지점",
+      "branch": "백신대구경북지점",
+      "calls": 3,
+      "accounts": 3,
+      "hcps": 1,
+      "products": 1,
+      "activeDays": 1,
+      "avgCallsPerAccount": 1,
+      "topProduct": "아렉스비",
+      "topProductShare": 100,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "15115",
+      "name": "김민호",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울2지점",
+      "calls": 3,
+      "accounts": 1,
+      "hcps": 1,
+      "products": 3,
+      "activeDays": 2,
+      "avgCallsPerAccount": 3,
+      "topProduct": "아렉스비",
+      "topProductShare": 33.3,
+      "topSpecialty": "미분류"
+    },
+    {
+      "repId": "15105",
+      "name": "장기덕",
+      "division": "백신영업부문",
+      "department": "백신 수도권지점",
+      "branch": "백신서울4지점",
+      "calls": 2,
+      "accounts": 2,
+      "hcps": 2,
+      "products": 2,
+      "activeDays": 2,
+      "avgCallsPerAccount": 1,
+      "topProduct": "로타릭스",
+      "topProductShare": 50,
+      "topSpecialty": "GP(일반의)"
+    }
+  ],
+  "productRows": [
+    {
+      "product": "미분류",
+      "calls": 17923,
+      "share": 20.6,
+      "branches": 20,
+      "reps": 144,
+      "divisionBreakdown": {
+        "ETC영업부문": 14108,
+        "백신영업부문": 3815
+      }
+    },
+    {
+      "product": "아렉스비",
+      "calls": 14543,
+      "share": 16.7,
+      "branches": 20,
+      "reps": 154,
+      "divisionBreakdown": {
+        "ETC영업부문": 11605,
+        "백신영업부문": 2938
+      }
+    },
+    {
+      "product": "싱그릭스",
+      "calls": 9783,
+      "share": 11.3,
+      "branches": 20,
+      "reps": 144,
+      "divisionBreakdown": {
+        "ETC영업부문": 7147,
+        "백신영업부문": 2636
+      }
+    },
+    {
+      "product": "아바미스나잘스프레이",
+      "calls": 8087,
+      "share": 9.3,
+      "branches": 20,
+      "reps": 148,
+      "divisionBreakdown": {
+        "ETC영업부문": 6263,
+        "백신영업부문": 1824
+      }
+    },
+    {
+      "product": "베니톨정",
+      "calls": 6729,
+      "share": 7.7,
+      "branches": 13,
+      "reps": 112,
+      "divisionBreakdown": {
+        "ETC영업부문": 6729
+      }
+    },
+    {
+      "product": "콘트라브 서방정",
+      "calls": 4283,
+      "share": 4.9,
+      "branches": 13,
+      "reps": 110,
+      "divisionBreakdown": {
+        "ETC영업부문": 4283
+      }
+    },
+    {
+      "product": "비타민D3비오엔주",
+      "calls": 4189,
+      "share": 4.8,
+      "branches": 18,
+      "reps": 116,
+      "divisionBreakdown": {
+        "ETC영업부문": 4170,
+        "백신영업부문": 19
+      }
+    },
+    {
+      "product": "프리토정",
+      "calls": 3344,
+      "share": 3.8,
+      "branches": 13,
+      "reps": 109,
+      "divisionBreakdown": {
+        "ETC영업부문": 3344
+      }
+    },
+    {
+      "product": "니페딕스지속정",
+      "calls": 2163,
+      "share": 2.5,
+      "branches": 13,
+      "reps": 104,
+      "divisionBreakdown": {
+        "ETC영업부문": 2163
+      }
+    },
+    {
+      "product": "벡세로",
+      "calls": 1938,
+      "share": 2.2,
+      "branches": 7,
+      "reps": 40,
+      "divisionBreakdown": {
+        "백신영업부문": 1938
+      }
+    },
+    {
+      "product": "로타릭스",
+      "calls": 1841,
+      "share": 2.1,
+      "branches": 7,
+      "reps": 41,
+      "divisionBreakdown": {
+        "백신영업부문": 1841
+      }
+    },
+    {
+      "product": "푸로스판시럽",
+      "calls": 1331,
+      "share": 1.5,
+      "branches": 20,
+      "reps": 101,
+      "divisionBreakdown": {
+        "ETC영업부문": 705,
+        "백신영업부문": 626
+      }
+    },
+    {
+      "product": "부스트릭스",
+      "calls": 1301,
+      "share": 1.5,
+      "branches": 10,
+      "reps": 42,
+      "divisionBreakdown": {
+        "ETC영업부문": 28,
+        "백신영업부문": 1273
+      }
+    },
+    {
+      "product": "프리토 플러스정",
+      "calls": 1293,
+      "share": 1.5,
+      "branches": 13,
+      "reps": 86,
+      "divisionBreakdown": {
+        "ETC영업부문": 1293
+      }
+    },
+    {
+      "product": "광동뷰라센",
+      "calls": 1005,
+      "share": 1.2,
+      "branches": 17,
+      "reps": 75,
+      "divisionBreakdown": {
+        "ETC영업부문": 706,
+        "백신영업부문": 299
+      }
+    },
+    {
+      "product": "세트락살플러스",
+      "calls": 913,
+      "share": 1,
+      "branches": 16,
+      "reps": 60,
+      "divisionBreakdown": {
+        "ETC영업부문": 302,
+        "백신영업부문": 611
+      }
+    },
+    {
+      "product": "아디펙스정",
+      "calls": 892,
+      "share": 1,
+      "branches": 12,
+      "reps": 63,
+      "divisionBreakdown": {
+        "ETC영업부문": 892
+      }
+    },
+    {
+      "product": "인판릭스IPV/Hib",
+      "calls": 668,
+      "share": 0.8,
+      "branches": 7,
+      "reps": 35,
+      "divisionBreakdown": {
+        "백신영업부문": 668
+      }
+    },
+    {
+      "product": "멘비오",
+      "calls": 640,
+      "share": 0.7,
+      "branches": 7,
+      "reps": 32,
+      "divisionBreakdown": {
+        "백신영업부문": 640
+      }
+    },
+    {
+      "product": "광동엘아르기닌염산염백주",
+      "calls": 478,
+      "share": 0.5,
+      "branches": 16,
+      "reps": 47,
+      "divisionBreakdown": {
+        "ETC영업부문": 406,
+        "백신영업부문": 72
+      }
+    },
+    {
+      "product": "세느비트주",
+      "calls": 389,
+      "share": 0.4,
+      "branches": 16,
+      "reps": 50,
+      "divisionBreakdown": {
+        "ETC영업부문": 376,
+        "백신영업부문": 13
+      }
+    },
+    {
+      "product": "하브릭스주성인용1440",
+      "calls": 385,
+      "share": 0.4,
+      "branches": 9,
+      "reps": 34,
+      "divisionBreakdown": {
+        "ETC영업부문": 6,
+        "백신영업부문": 379
+      }
+    },
+    {
+      "product": "하브릭스주소아용720",
+      "calls": 331,
+      "share": 0.4,
+      "branches": 7,
+      "reps": 32,
+      "divisionBreakdown": {
+        "백신영업부문": 331
+      }
+    },
+    {
+      "product": "파라케이주",
+      "calls": 322,
+      "share": 0.4,
+      "branches": 12,
+      "reps": 45,
+      "divisionBreakdown": {
+        "ETC영업부문": 298,
+        "백신영업부문": 24
+      }
+    },
+    {
+      "product": "플루아릭스테트라",
+      "calls": 319,
+      "share": 0.4,
+      "branches": 18,
+      "reps": 47,
+      "divisionBreakdown": {
+        "ETC영업부문": 150,
+        "백신영업부문": 169
+      }
+    },
+    {
+      "product": "아이톡씨엠씨점안액1(1회용)",
+      "calls": 255,
+      "share": 0.3,
+      "branches": 2,
+      "reps": 4,
+      "divisionBreakdown": {
+        "ETC영업부문": 255
+      }
+    },
+    {
+      "product": "히알식스주",
+      "calls": 157,
+      "share": 0.2,
+      "branches": 12,
+      "reps": 35,
+      "divisionBreakdown": {
+        "ETC영업부문": 156,
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "아루센백주",
+      "calls": 128,
+      "share": 0.1,
+      "branches": 12,
+      "reps": 36,
+      "divisionBreakdown": {
+        "ETC영업부문": 113,
+        "백신영업부문": 15
+      }
+    },
+    {
+      "product": "닥터라민주 100ml",
+      "calls": 99,
+      "share": 0.1,
+      "branches": 15,
+      "reps": 22,
+      "divisionBreakdown": {
+        "ETC영업부문": 84,
+        "백신영업부문": 15
+      }
+    },
+    {
+      "product": "프리오릭스주",
+      "calls": 94,
+      "share": 0.1,
+      "branches": 7,
+      "reps": 21,
+      "divisionBreakdown": {
+        "백신영업부문": 94
+      }
+    },
+    {
+      "product": "콕스듀오정",
+      "calls": 81,
+      "share": 0.1,
+      "branches": 9,
+      "reps": 21,
+      "divisionBreakdown": {
+        "ETC영업부문": 81
+      }
+    },
+    {
+      "product": "바이타솔주 250ml",
+      "calls": 76,
+      "share": 0.1,
+      "branches": 11,
+      "reps": 21,
+      "divisionBreakdown": {
+        "ETC영업부문": 71,
+        "백신영업부문": 5
+      }
+    },
+    {
+      "product": "유바솔주 250ml",
+      "calls": 73,
+      "share": 0.1,
+      "branches": 11,
+      "reps": 21,
+      "divisionBreakdown": {
+        "ETC영업부문": 66,
+        "백신영업부문": 7
+      }
+    },
+    {
+      "product": "화이치온주",
+      "calls": 71,
+      "share": 0.1,
+      "branches": 9,
+      "reps": 15,
+      "divisionBreakdown": {
+        "ETC영업부문": 21,
+        "백신영업부문": 50
+      }
+    },
+    {
+      "product": "닥터라민주 250ml",
+      "calls": 65,
+      "share": 0.1,
+      "branches": 12,
+      "reps": 21,
+      "divisionBreakdown": {
+        "ETC영업부문": 61,
+        "백신영업부문": 4
+      }
+    },
+    {
+      "product": "푸르티아민주",
+      "calls": 49,
+      "share": 0.1,
+      "branches": 10,
+      "reps": 15,
+      "divisionBreakdown": {
+        "ETC영업부문": 8,
+        "백신영업부문": 41
+      }
+    },
+    {
+      "product": "아이톡올로점안액0.2(1회용)",
+      "calls": 47,
+      "share": 0.1,
+      "branches": 1,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 47
+      }
+    },
+    {
+      "product": "콤비플렉스리피드페리주 384ml",
+      "calls": 45,
+      "share": 0.1,
+      "branches": 8,
+      "reps": 14,
+      "divisionBreakdown": {
+        "ETC영업부문": 45
+      }
+    },
+    {
+      "product": "티자리드정",
+      "calls": 45,
+      "share": 0.1,
+      "branches": 6,
+      "reps": 11,
+      "divisionBreakdown": {
+        "ETC영업부문": 44,
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "닥터라민골드 250ml",
+      "calls": 35,
+      "share": 0,
+      "branches": 9,
+      "reps": 19,
+      "divisionBreakdown": {
+        "ETC영업부문": 27,
+        "백신영업부문": 8
+      }
+    },
+    {
+      "product": "에버라민주 250ml",
+      "calls": 33,
+      "share": 0,
+      "branches": 7,
+      "reps": 12,
+      "divisionBreakdown": {
+        "ETC영업부문": 33
+      }
+    },
+    {
+      "product": "플루아릭스",
+      "calls": 33,
+      "share": 0,
+      "branches": 10,
+      "reps": 12,
+      "divisionBreakdown": {
+        "ETC영업부문": 7,
+        "백신영업부문": 26
+      }
+    },
+    {
+      "product": "이반포스주",
+      "calls": 32,
+      "share": 0,
+      "branches": 6,
+      "reps": 11,
+      "divisionBreakdown": {
+        "ETC영업부문": 32
+      }
+    },
+    {
+      "product": "광동세파클러캡슐",
+      "calls": 30,
+      "share": 0,
+      "branches": 7,
+      "reps": 9,
+      "divisionBreakdown": {
+        "ETC영업부문": 5,
+        "백신영업부문": 25
+      }
+    },
+    {
+      "product": "라메아주사액",
+      "calls": 26,
+      "share": 0,
+      "branches": 2,
+      "reps": 5,
+      "divisionBreakdown": {
+        "ETC영업부문": 26
+      }
+    },
+    {
+      "product": "광동프라목신크림",
+      "calls": 24,
+      "share": 0,
+      "branches": 6,
+      "reps": 10,
+      "divisionBreakdown": {
+        "ETC영업부문": 24
+      }
+    },
+    {
+      "product": "콤비플렉스엠시티페리주 375ml",
+      "calls": 23,
+      "share": 0,
+      "branches": 6,
+      "reps": 10,
+      "divisionBreakdown": {
+        "ETC영업부문": 21,
+        "백신영업부문": 2
+      }
+    },
+    {
+      "product": "뷰타민주",
+      "calls": 23,
+      "share": 0,
+      "branches": 6,
+      "reps": 10,
+      "divisionBreakdown": {
+        "ETC영업부문": 20,
+        "백신영업부문": 3
+      }
+    },
+    {
+      "product": "장이더락 캡슐",
+      "calls": 20,
+      "share": 0,
+      "branches": 7,
+      "reps": 10,
+      "divisionBreakdown": {
+        "ETC영업부문": 20
+      }
+    },
+    {
+      "product": "인판릭스-아이피브이",
+      "calls": 20,
+      "share": 0,
+      "branches": 6,
+      "reps": 10,
+      "divisionBreakdown": {
+        "백신영업부문": 20
+      }
+    },
+    {
+      "product": "락손필름코팅정150mg",
+      "calls": 19,
+      "share": 0,
+      "branches": 1,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 19
+      }
+    },
+    {
+      "product": "티보리시정",
+      "calls": 19,
+      "share": 0,
+      "branches": 6,
+      "reps": 9,
+      "divisionBreakdown": {
+        "ETC영업부문": 1,
+        "백신영업부문": 18
+      }
+    },
+    {
+      "product": "장이락캡슐",
+      "calls": 16,
+      "share": 0,
+      "branches": 6,
+      "reps": 8,
+      "divisionBreakdown": {
+        "ETC영업부문": 8,
+        "백신영업부문": 8
+      }
+    },
+    {
+      "product": "에스리시정",
+      "calls": 15,
+      "share": 0,
+      "branches": 7,
+      "reps": 8,
+      "divisionBreakdown": {
+        "백신영업부문": 15
+      }
+    },
+    {
+      "product": "장이락산",
+      "calls": 13,
+      "share": 0,
+      "branches": 6,
+      "reps": 9,
+      "divisionBreakdown": {
+        "ETC영업부문": 1,
+        "백신영업부문": 12
+      }
+    },
+    {
+      "product": "레나라정",
+      "calls": 12,
+      "share": 0,
+      "branches": 1,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 12
+      }
+    },
+    {
+      "product": "광동록소프로펜나트륨정",
+      "calls": 11,
+      "share": 0,
+      "branches": 6,
+      "reps": 9,
+      "divisionBreakdown": {
+        "ETC영업부문": 5,
+        "백신영업부문": 6
+      }
+    },
+    {
+      "product": "이프리시정",
+      "calls": 10,
+      "share": 0,
+      "branches": 4,
+      "reps": 6,
+      "divisionBreakdown": {
+        "ETC영업부문": 2,
+        "백신영업부문": 8
+      }
+    },
+    {
+      "product": "히알서드주",
+      "calls": 10,
+      "share": 0,
+      "branches": 6,
+      "reps": 8,
+      "divisionBreakdown": {
+        "ETC영업부문": 10
+      }
+    },
+    {
+      "product": "광동클래리트로마이신건조시럽",
+      "calls": 8,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 2,
+        "백신영업부문": 6
+      }
+    },
+    {
+      "product": "징코웰주",
+      "calls": 8,
+      "share": 0,
+      "branches": 5,
+      "reps": 6,
+      "divisionBreakdown": {
+        "ETC영업부문": 4,
+        "백신영업부문": 4
+      }
+    },
+    {
+      "product": "제이헤파민주 250ml",
+      "calls": 8,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 8
+      }
+    },
+    {
+      "product": "인판릭스주",
+      "calls": 8,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "백신영업부문": 8
+      }
+    },
+    {
+      "product": "자누로디정50mg",
+      "calls": 7,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 7
+      }
+    },
+    {
+      "product": "엑시피움정",
+      "calls": 7,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 7
+      }
+    },
+    {
+      "product": "아미파티백주",
+      "calls": 6,
+      "share": 0,
+      "branches": 6,
+      "reps": 6,
+      "divisionBreakdown": {
+        "ETC영업부문": 4,
+        "백신영업부문": 2
+      }
+    },
+    {
+      "product": "베포큐서방정",
+      "calls": 6,
+      "share": 0,
+      "branches": 6,
+      "reps": 6,
+      "divisionBreakdown": {
+        "ETC영업부문": 4,
+        "백신영업부문": 2
+      }
+    },
+    {
+      "product": "광동아토르바스타틴정",
+      "calls": 5,
+      "share": 0,
+      "branches": 3,
+      "reps": 5,
+      "divisionBreakdown": {
+        "ETC영업부문": 5
+      }
+    },
+    {
+      "product": "브이반정",
+      "calls": 5,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 5
+      }
+    },
+    {
+      "product": "히드케이주",
+      "calls": 5,
+      "share": 0,
+      "branches": 4,
+      "reps": 4,
+      "divisionBreakdown": {
+        "ETC영업부문": 3,
+        "백신영업부문": 2
+      }
+    },
+    {
+      "product": "이부케이주",
+      "calls": 5,
+      "share": 0,
+      "branches": 1,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 5
+      }
+    },
+    {
+      "product": "광동레바미피드정",
+      "calls": 5,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 2,
+        "백신영업부문": 3
+      }
+    },
+    {
+      "product": "아세테인캡슐",
+      "calls": 5,
+      "share": 0,
+      "branches": 3,
+      "reps": 4,
+      "divisionBreakdown": {
+        "ETC영업부문": 2,
+        "백신영업부문": 3
+      }
+    },
+    {
+      "product": "파라멜인퓨전주",
+      "calls": 4,
+      "share": 0,
+      "branches": 3,
+      "reps": 4,
+      "divisionBreakdown": {
+        "ETC영업부문": 4
+      }
+    },
+    {
+      "product": "자누로디정100mg",
+      "calls": 4,
+      "share": 0,
+      "branches": 1,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 4
+      }
+    },
+    {
+      "product": "뷰티로주",
+      "calls": 4,
+      "share": 0,
+      "branches": 4,
+      "reps": 4,
+      "divisionBreakdown": {
+        "ETC영업부문": 4
+      }
+    },
+    {
+      "product": "아미파티주",
+      "calls": 4,
+      "share": 0,
+      "branches": 1,
+      "reps": 3,
+      "divisionBreakdown": {
+        "백신영업부문": 4
+      }
+    },
+    {
+      "product": "큐덱시 서방캡슐",
+      "calls": 3,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 3
+      }
+    },
+    {
+      "product": "팜시르정",
+      "calls": 3,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 3
+      }
+    },
+    {
+      "product": "셀비콕스캡슐",
+      "calls": 3,
+      "share": 0,
+      "branches": 1,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 3
+      }
+    },
+    {
+      "product": "레보케어CR서방정(레보드로프로피진)",
+      "calls": 3,
+      "share": 0,
+      "branches": 2,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 2,
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "에어낙정",
+      "calls": 3,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 3
+      }
+    },
+    {
+      "product": "압박스타킹",
+      "calls": 3,
+      "share": 0,
+      "branches": 3,
+      "reps": 3,
+      "divisionBreakdown": {
+        "ETC영업부문": 2,
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "레보큐정",
+      "calls": 3,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "백신영업부문": 3
+      }
+    },
+    {
+      "product": "뷰라센주",
+      "calls": 3,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "백신영업부문": 3
+      }
+    },
+    {
+      "product": "광동타목시펜정",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "로제케이정",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "자이렌정",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "광동칼디정",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "아모시달듀오시럽",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 1,
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "광동클래리트로마이신정",
+      "calls": 2,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "다프로디정",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "토피리드정",
+      "calls": 2,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "레보셀정",
+      "calls": 2,
+      "share": 0,
+      "branches": 2,
+      "reps": 2,
+      "divisionBreakdown": {
+        "ETC영업부문": 2
+      }
+    },
+    {
+      "product": "광동세파드록실",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "엑스브이정",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "두아보연질캡슐 0.5밀리그램",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "이뮤셉트캡슐",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "유드론주",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "수액세트 23G",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "돌트람셋정",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "광동라푸티딘정",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "ETC영업부문": 1
+      }
+    },
+    {
+      "product": "디티부스터주",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "센코딜에프정(90T)",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "아모시달정",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "아루센주",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "백신영업부문": 1
+      }
+    },
+    {
+      "product": "푸로렌캡슐",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1,
+      "divisionBreakdown": {
+        "백신영업부문": 1
+      }
+    }
+  ],
+  "specialtyRows": [
+    {
+      "specialty": "내과",
+      "calls": 14610,
+      "share": 16.8,
+      "branches": 20,
+      "reps": 132
+    },
+    {
+      "specialty": "소아청소년과",
+      "calls": 10682,
+      "share": 12.3,
+      "branches": 20,
+      "reps": 109
+    },
+    {
+      "specialty": "가정의학과",
+      "calls": 8238,
+      "share": 9.5,
+      "branches": 21,
+      "reps": 140
+    },
+    {
+      "specialty": "산부인과",
+      "calls": 7312,
+      "share": 8.4,
+      "branches": 21,
+      "reps": 145
+    },
+    {
+      "specialty": "이비인후과",
+      "calls": 6993,
+      "share": 8,
+      "branches": 21,
+      "reps": 86
+    },
+    {
+      "specialty": "미분류",
+      "calls": 5405,
+      "share": 6.2,
+      "branches": 21,
+      "reps": 142
+    },
+    {
+      "specialty": "GP(일반의)",
+      "calls": 5324,
+      "share": 6.1,
+      "branches": 20,
+      "reps": 134
+    },
+    {
+      "specialty": "정형외과",
+      "calls": 4569,
+      "share": 5.3,
+      "branches": 18,
+      "reps": 112
+    },
+    {
+      "specialty": "소화기내과",
+      "calls": 3312,
+      "share": 3.8,
+      "branches": 20,
+      "reps": 119
+    },
+    {
+      "specialty": "외과",
+      "calls": 3114,
+      "share": 3.6,
+      "branches": 19,
+      "reps": 121
+    },
+    {
+      "specialty": "비뇨의학과",
+      "calls": 2777,
+      "share": 3.2,
+      "branches": 14,
+      "reps": 93
+    },
+    {
+      "specialty": "마취통증의학과",
+      "calls": 2387,
+      "share": 2.7,
+      "branches": 17,
+      "reps": 98
+    },
+    {
+      "specialty": "피부과",
+      "calls": 2006,
+      "share": 2.3,
+      "branches": 12,
+      "reps": 85
+    },
+    {
+      "specialty": "신장내과",
+      "calls": 1152,
+      "share": 1.3,
+      "branches": 16,
+      "reps": 79
+    },
+    {
+      "specialty": "신경외과",
+      "calls": 1103,
+      "share": 1.3,
+      "branches": 15,
+      "reps": 78
+    },
+    {
+      "specialty": "내분비내과",
+      "calls": 1027,
+      "share": 1.2,
+      "branches": 14,
+      "reps": 47
+    },
+    {
+      "specialty": "재활의학과",
+      "calls": 911,
+      "share": 1,
+      "branches": 15,
+      "reps": 83
+    },
+    {
+      "specialty": "호흡기내과",
+      "calls": 666,
+      "share": 0.8,
+      "branches": 12,
+      "reps": 36
+    },
+    {
+      "specialty": "순환기내과",
+      "calls": 518,
+      "share": 0.6,
+      "branches": 15,
+      "reps": 49
+    },
+    {
+      "specialty": "신경과",
+      "calls": 458,
+      "share": 0.5,
+      "branches": 15,
+      "reps": 57
+    },
+    {
+      "specialty": "안과",
+      "calls": 436,
+      "share": 0.5,
+      "branches": 11,
+      "reps": 20
+    },
+    {
+      "specialty": "심장내과",
+      "calls": 428,
+      "share": 0.5,
+      "branches": 12,
+      "reps": 30
+    },
+    {
+      "specialty": "흉부외과",
+      "calls": 352,
+      "share": 0.4,
+      "branches": 14,
+      "reps": 41
+    },
+    {
+      "specialty": "응급의학과",
+      "calls": 285,
+      "share": 0.3,
+      "branches": 14,
+      "reps": 32
+    },
+    {
+      "specialty": "류마티스내과",
+      "calls": 268,
+      "share": 0.3,
+      "branches": 11,
+      "reps": 34
+    },
+    {
+      "specialty": "정신건강의학과",
+      "calls": 253,
+      "share": 0.3,
+      "branches": 12,
+      "reps": 30
+    },
+    {
+      "specialty": "영상의학과",
+      "calls": 230,
+      "share": 0.3,
+      "branches": 13,
+      "reps": 39
+    },
+    {
+      "specialty": "성형외과",
+      "calls": 216,
+      "share": 0.2,
+      "branches": 14,
+      "reps": 28
+    },
+    {
+      "specialty": "진단검사의학과",
+      "calls": 192,
+      "share": 0.2,
+      "branches": 7,
+      "reps": 16
+    },
+    {
+      "specialty": "알레르기내과",
+      "calls": 187,
+      "share": 0.2,
+      "branches": 6,
+      "reps": 14
+    },
+    {
+      "specialty": "한방과",
+      "calls": 155,
+      "share": 0.2,
+      "branches": 9,
+      "reps": 15
+    },
+    {
+      "specialty": "혈관외과",
+      "calls": 147,
+      "share": 0.2,
+      "branches": 6,
+      "reps": 14
+    },
+    {
+      "specialty": "감염내과",
+      "calls": 100,
+      "share": 0.1,
+      "branches": 8,
+      "reps": 19
+    },
+    {
+      "specialty": "피부비뇨기과",
+      "calls": 98,
+      "share": 0.1,
+      "branches": 7,
+      "reps": 13
+    },
+    {
+      "specialty": "병리과",
+      "calls": 98,
+      "share": 0.1,
+      "branches": 9,
+      "reps": 14
+    },
+    {
+      "specialty": "진단방사선과",
+      "calls": 87,
+      "share": 0.1,
+      "branches": 6,
+      "reps": 7
+    },
+    {
+      "specialty": "기타",
+      "calls": 75,
+      "share": 0.1,
+      "branches": 6,
+      "reps": 10
+    },
+    {
+      "specialty": "심장혈관내과",
+      "calls": 71,
+      "share": 0.1,
+      "branches": 3,
+      "reps": 4
+    },
+    {
+      "specialty": "통증의학과",
+      "calls": 70,
+      "share": 0.1,
+      "branches": 3,
+      "reps": 10
+    },
+    {
+      "specialty": "약제과",
+      "calls": 68,
+      "share": 0.1,
+      "branches": 5,
+      "reps": 6
+    },
+    {
+      "specialty": "피부과, 비뇨기과",
+      "calls": 60,
+      "share": 0.1,
+      "branches": 7,
+      "reps": 11
+    },
+    {
+      "specialty": "유방외과",
+      "calls": 54,
+      "share": 0.1,
+      "branches": 8,
+      "reps": 12
+    },
+    {
+      "specialty": "의원",
+      "calls": 49,
+      "share": 0.1,
+      "branches": 6,
+      "reps": 8
+    },
+    {
+      "specialty": "일반외과",
+      "calls": 40,
+      "share": 0,
+      "branches": 5,
+      "reps": 8
+    },
+    {
+      "specialty": "치과",
+      "calls": 38,
+      "share": 0,
+      "branches": 6,
+      "reps": 8
+    },
+    {
+      "specialty": "혈액종양내과",
+      "calls": 35,
+      "share": 0,
+      "branches": 5,
+      "reps": 7
+    },
+    {
+      "specialty": "노년내과",
+      "calls": 34,
+      "share": 0,
+      "branches": 3,
+      "reps": 3
+    },
+    {
+      "specialty": "소아정신과",
+      "calls": 31,
+      "share": 0,
+      "branches": 4,
+      "reps": 4
+    },
+    {
+      "specialty": "이식외과",
+      "calls": 25,
+      "share": 0,
+      "branches": 5,
+      "reps": 6
+    },
+    {
+      "specialty": "직업환경의학과",
+      "calls": 25,
+      "share": 0,
+      "branches": 4,
+      "reps": 4
+    },
+    {
+      "specialty": "입원의학과",
+      "calls": 21,
+      "share": 0,
+      "branches": 3,
+      "reps": 4
+    },
+    {
+      "specialty": "방사선종양학과",
+      "calls": 19,
+      "share": 0,
+      "branches": 3,
+      "reps": 3
+    },
+    {
+      "specialty": "소아신경",
+      "calls": 18,
+      "share": 0,
+      "branches": 2,
+      "reps": 3
+    },
+    {
+      "specialty": "종양내과",
+      "calls": 17,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "척추외과",
+      "calls": 17,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "소아호흡기",
+      "calls": 14,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "소아알레르기",
+      "calls": 14,
+      "share": 0,
+      "branches": 2,
+      "reps": 3
+    },
+    {
+      "specialty": "내분비외과",
+      "calls": 12,
+      "share": 0,
+      "branches": 3,
+      "reps": 3
+    },
+    {
+      "specialty": "결핵과",
+      "calls": 9,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "유전학",
+      "calls": 8,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    },
+    {
+      "specialty": "소아내분비",
+      "calls": 7,
+      "share": 0,
+      "branches": 3,
+      "reps": 3
+    },
+    {
+      "specialty": "신경정신과",
+      "calls": 6,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    },
+    {
+      "specialty": "혈액내과",
+      "calls": 4,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "응급실",
+      "calls": 4,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    },
+    {
+      "specialty": "예방의학과",
+      "calls": 4,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "핵의학과",
+      "calls": 4,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    },
+    {
+      "specialty": "소아정형외과",
+      "calls": 3,
+      "share": 0,
+      "branches": 2,
+      "reps": 2
+    },
+    {
+      "specialty": "소아혈액종양",
+      "calls": 3,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    },
+    {
+      "specialty": "소아소화기",
+      "calls": 2,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    },
+    {
+      "specialty": "보건소",
+      "calls": 1,
+      "share": 0,
+      "branches": 1,
+      "reps": 1
+    }
+  ],
+  "visitDepth": [
+    {
+      "bucket": "1",
+      "count": 217,
+      "share": 1.7
+    },
+    {
+      "bucket": "2",
+      "count": 1921,
+      "share": 15.3
+    },
+    {
+      "bucket": "3",
+      "count": 1868,
+      "share": 14.9
+    },
+    {
+      "bucket": "4",
+      "count": 1926,
+      "share": 15.4
+    },
+    {
+      "bucket": "5",
+      "count": 1225,
+      "share": 9.8
+    },
+    {
+      "bucket": "6",
+      "count": 1349,
+      "share": 10.8
+    },
+    {
+      "bucket": "7",
+      "count": 529,
+      "share": 4.2
+    },
+    {
+      "bucket": "8",
+      "count": 593,
+      "share": 4.7
+    },
+    {
+      "bucket": "9",
+      "count": 630,
+      "share": 5
+    },
+    {
+      "bucket": "10+",
+      "count": 2267,
+      "share": 18.1
+    }
+  ],
+  "insights": [
+    {
+      "tone": "positive",
+      "title": "가장 큰 엔진",
+      "body": "ETC경남지점이(가) 9,411콜로 전체의 10.8%를 담당합니다. 한 달 내내 가장 강한 추진력을 보여줬습니다.",
+      "metric": "10.8%"
+    },
+    {
+      "tone": "positive",
+      "title": "현장 톱 퍼포머",
+      "body": "정충화(ETC전북지점)가 1,143콜로 개인 실적 1위를 기록했습니다. 상위 인력 확산 포인트로 보기 좋습니다.",
+      "metric": "1,143콜"
+    },
+    {
+      "tone": "focus",
+      "title": "제품 중심축",
+      "body": "미분류이(가) 17,923콜로 가장 큰 비중을 차지합니다. 이번 스냅샷의 포트폴리오 중심축입니다.",
+      "metric": "20.6%"
+    },
+    {
+      "tone": "warning",
+      "title": "라벨 누락 신호",
+      "body": "품목이 비어 있는 행이 17,923건입니다. 분석상 '미분류'로 묶였고, 전체 해석력에 직접 영향을 줍니다.",
+      "metric": "20.6%"
+    },
+    {
+      "tone": "warning",
+      "title": "저활동 구간",
+      "body": "ETC영업3본부은(는) 320콜로 중앙값 3,351콜에 못 미칩니다. 운영 관점의 선제 점검 후보입니다.",
+      "metric": "320콜"
+    },
+    {
+      "tone": "focus",
+      "title": "재방문 강도",
+      "body": "ETC서울2지점은(는) 계정당 평균 64.44회로 가장 깊게 파고들고 있습니다. 반복 방문의 질을 따로 볼 필요가 있습니다.",
+      "metric": "64.44회"
+    },
+    {
+      "tone": "warning",
+      "title": "편중 리스크",
+      "body": "이수영은(는) 아이톡씨엠씨점안액1(1회용) 비중이 100%입니다. 성과는 높아도 포트폴리오 편중 관리가 필요합니다.",
+      "metric": "100%"
+    },
+    {
+      "tone": "positive",
+      "title": "월간 피크 데이",
+      "body": "2025-10-28에 6,276콜로 월중 최대치가 나왔습니다. 캠페인, 조직 운영, 현장 배치와 연결해서 해석할 수 있습니다.",
+      "metric": "6,276콜"
+    }
+  ],
+  "focusReps": [
+    {
+      "repId": "24082",
+      "name": "이수영",
+      "division": "ETC영업부문",
+      "department": "ETC영업3부문",
+      "branch": "ETC영업3본부",
+      "calls": 122,
+      "accounts": 26,
+      "hcps": 26,
+      "products": 1,
+      "activeDays": 15,
+      "avgCallsPerAccount": 4.69,
+      "topProduct": "아이톡씨엠씨점안액1(1회용)",
+      "topProductShare": 100,
+      "topSpecialty": "안과"
+    },
+    {
+      "repId": "24079",
+      "name": "김용",
+      "division": "ETC영업부문",
+      "department": "ETC영업3부문",
+      "branch": "ETC영업3본부",
+      "calls": 92,
+      "accounts": 16,
+      "hcps": 16,
+      "products": 3,
+      "activeDays": 11,
+      "avgCallsPerAccount": 5.75,
+      "topProduct": "아이톡씨엠씨점안액1(1회용)",
+      "topProductShare": 85.9,
+      "topSpecialty": "안과"
+    }
+  ],
+  "mapping": {
+    "availableNow": [
+      "사업부/부문/지점/담당자별 CALL",
+      "품목별 CALL과 SOV",
+      "거래처/HCP 기반 방문 깊이",
+      "지점별 포트폴리오 편중",
+      "반복 방문 강도와 재방문 분포",
+      "진료과 기반 현장 믹스"
+    ],
+    "needsMasterData": [
+      "월 목표와 달성률",
+      "근무일 기준 Daily call",
+      "타깃 거래처수와 Coverage rate",
+      "본부 Total 목표 대비 성과",
+      "제품별 타깃 모수"
+    ]
+  }
+}
