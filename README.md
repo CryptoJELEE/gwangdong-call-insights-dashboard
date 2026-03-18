@@ -6,7 +6,7 @@
 
 - `docs/` — GitHub Pages에서 그대로 서빙할 정적 사이트
 - `scripts/build-data.mjs` — 공개 Google Sheets CSV 또는 로컬 CSV를 읽어서 대시보드용 JSON 생성
-- `.github/workflows/deploy.yml` — `docs/`를 GitHub Pages에 배포하는 워크플로
+- `docs/` — GitHub Pages에서 `main / docs` 소스로 바로 배포할 폴더
 
 ## 로컬 데이터 재생성
 
@@ -37,8 +37,8 @@ python3 -m http.server 4173
 ## GitHub Pages
 
 1. 이 폴더를 별도 GitHub 저장소로 올리거나 기존 저장소 루트로 사용합니다.
-2. 저장소의 Pages 소스를 `GitHub Actions`로 둡니다.
-3. `main` 브랜치에 푸시하면 `.github/workflows/deploy.yml`이 `docs/`를 배포합니다.
+2. 저장소의 Pages 소스를 `Deploy from a branch`로 두고, 브랜치는 `main`, 폴더는 `/docs`로 선택합니다.
+3. `main` 브랜치에 푸시하면 `docs/`가 그대로 배포됩니다.
 
 ## 현재 데이터 해석 범위
 
