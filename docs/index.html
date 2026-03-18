@@ -26,7 +26,12 @@
 
       <nav class="topbar">
         <div class="topbar-group" id="division-filter"></div>
-        <a class="source-link" href="https://docs.google.com/spreadsheets/d/1foa_shUb1JJuDxkb_iFYY8qpXTOLZYhF/edit?gid=1471550893#gid=1471550893" target="_blank" rel="noreferrer">원본 시트 열기</a>
+        <a
+          class="source-link"
+          href="https://docs.google.com/spreadsheets/d/1foa_shUb1JJuDxkb_iFYY8qpXTOLZYhF/edit?gid=1471550893#gid=1471550893"
+          target="_blank"
+          rel="noreferrer"
+        >원본 시트 열기</a>
       </nav>
 
       <main id="app" class="page-grid">
@@ -38,6 +43,16 @@
             </div>
           </div>
           <div class="insight-grid" id="insight-grid"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Action Queue</p>
+              <h2>지금 바로 손봐야 할 우선순위</h2>
+            </div>
+          </div>
+          <div class="action-grid" id="action-grid"></div>
         </section>
 
         <section class="panel panel-wide">
@@ -68,6 +83,23 @@
             </div>
           </div>
           <div id="visit-depth" class="visit-depth"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Spotlight</p>
+              <h2>드릴다운 워크스페이스</h2>
+            </div>
+          </div>
+          <div class="spotlight-controls">
+            <div class="pill-tabs" id="entity-tabs"></div>
+            <input id="entity-search" class="search-input" type="search" placeholder="지점, 담당자, 품목 검색" />
+          </div>
+          <div class="spotlight-layout">
+            <div class="entity-list" id="entity-list"></div>
+            <div class="entity-detail" id="entity-detail"></div>
+          </div>
         </section>
 
         <section class="panel panel-wide">
@@ -119,6 +151,16 @@
             </div>
           </div>
           <div id="focus-list" class="focus-list"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-header">
+            <div>
+              <p class="kicker">Product x Branch</p>
+              <h2>상위 품목의 지점별 축</h2>
+            </div>
+          </div>
+          <div id="product-matrix" class="matrix-grid"></div>
         </section>
 
         <section class="panel panel-wide">

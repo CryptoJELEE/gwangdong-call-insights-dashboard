@@ -131,86 +131,166 @@ function formatMonth(date) {
 
 function getTopPair(counter) {
   const top = sortedCounterEntries(counter)[0];
-  if (!top) {
-    return ['미분류', 0];
-  }
+  if (!top) return ['미분류', 0];
   return top;
 }
 
-function buildInsights({
-  totalCalls,
-  topBranch,
-  topRep,
-  topProduct,
-  unlabeledProductCalls,
-  medianBranchCalls,
-  weakestBranch,
-  deepestBranch,
-  specialistReps,
-  mostActiveDay
-}) {
-  const insights = [];
+function takeTopRows(entries, limit, projector) {
+  return entries.slice(0, limit).map(projector);
+}
 
-  insights.push({
-    tone: 'positive',
-    title: '가장 큰 엔진',
-    body: `${topBranch.branch}이(가) ${topBranch.calls.toLocaleString('ko-KR')}콜로 전체의 ${topBranch.share}%를 담당합니다. 한 달 내내 가장 강한 추진력을 보여줬습니다.`,
-    metric: `${topBranch.share}%`
-  });
+function buildInsights(input) {
+  const {
+    topBranch,
+    topRep,
+    topProduct,
+    unlabeledProductCalls,
+    totalCalls,
+    weakestBranch,
+    deepestBranch,
+    concentrationRep,
+    mostActiveDay,
+    divisionCards
+  } = input;
 
-  insights.push({
-    tone: 'positive',
-    title: '현장 톱 퍼포머',
-    body: `${topRep.name}(${topRep.branch})가 ${topRep.calls.toLocaleString('ko-KR')}콜로 개인 실적 1위를 기록했습니다. 상위 인력 확산 포인트로 보기 좋습니다.`,
-    metric: `${topRep.calls.toLocaleString('ko-KR')}콜`
-  });
+  const leadingDivision = divisionCards[0];
+  const trailingDivision = divisionCards[divisionCards.length - 1];
 
-  insights.push({
-    tone: 'focus',
-    title: '제품 중심축',
-    body: `${topProduct.product}이(가) ${topProduct.calls.toLocaleString('ko-KR')}콜로 가장 큰 비중을 차지합니다. 이번 스냅샷의 포트폴리오 중심축입니다.`,
-    metric: `${topProduct.share}%`
-  });
-
-  insights.push({
-    tone: 'warning',
-    title: '라벨 누락 신호',
-    body: `품목이 비어 있는 행이 ${unlabeledProductCalls.toLocaleString('ko-KR')}건입니다. 분석상 '미분류'로 묶였고, 전체 해석력에 직접 영향을 줍니다.`,
-    metric: `${toShare(unlabeledProductCalls, totalCalls)}%`
-  });
-
-  insights.push({
-    tone: 'warning',
-    title: '저활동 구간',
-    body: `${weakestBranch.branch}은(는) ${weakestBranch.calls.toLocaleString('ko-KR')}콜로 중앙값 ${medianBranchCalls.toLocaleString('ko-KR')}콜에 못 미칩니다. 운영 관점의 선제 점검 후보입니다.`,
-    metric: `${weakestBranch.calls.toLocaleString('ko-KR')}콜`
-  });
-
-  insights.push({
-    tone: 'focus',
-    title: '재방문 강도',
-    body: `${deepestBranch.branch}은(는) 계정당 평균 ${deepestBranch.avgCallsPerAccount}회로 가장 깊게 파고들고 있습니다. 반복 방문의 질을 따로 볼 필요가 있습니다.`,
-    metric: `${deepestBranch.avgCallsPerAccount}회`
-  });
-
-  if (specialistReps.length > 0) {
-    const lead = specialistReps[0];
-    insights.push({
+  return [
+    {
+      tone: 'positive',
+      title: '가장 큰 엔진',
+      body: `${topBranch.branch}이(가) ${topBranch.calls.toLocaleString('ko-KR')}콜로 전체의 ${topBranch.share}%를 담당합니다. 현재 파이프라인의 가장 강한 추진 축입니다.`,
+      metric: `${topBranch.share}%`
+    },
+    {
+      tone: 'positive',
+      title: '현장 톱 퍼포머',
+      body: `${topRep.name}(${topRep.branch})가 ${topRep.calls.toLocaleString('ko-KR')}콜로 개인 실적 1위를 기록했습니다. 현장 실행 패턴을 확산하기 좋은 기준점입니다.`,
+      metric: `${topRep.calls.toLocaleString('ko-KR')}콜`
+    },
+    {
+      tone: 'focus',
+      title: '제품 중심축',
+      body: `${topProduct.product}이(가) ${topProduct.calls.toLocaleString('ko-KR')}콜, ${topProduct.share}% 비중으로 가장 큰 포트폴리오 축을 형성합니다.`,
+      metric: `${topProduct.share}%`
+    },
+    {
+      tone: 'warning',
+      title: '라벨 누락 신호',
+      body: `품목이 비어 있는 행이 ${unlabeledProductCalls.toLocaleString('ko-KR')}건입니다. 분석 화면에서는 '미분류'로 묶였고, 해석 신뢰도에 직접 영향을 줍니다.`,
+      metric: `${toShare(unlabeledProductCalls, totalCalls)}%`
+    },
+    {
+      tone: 'warning',
+      title: '저활동 구간',
+      body: `${weakestBranch.branch}은(는) 담당자 1인당 평균 ${weakestBranch.avgCallsPerRep}콜 수준입니다. 활동량 관점의 운영 점검 우선순위가 높습니다.`,
+      metric: `${weakestBranch.avgCallsPerRep}콜`
+    },
+    {
+      tone: 'focus',
+      title: '재방문 강도',
+      body: `${deepestBranch.branch}은(는) 계정당 평균 ${deepestBranch.avgCallsPerAccount}회로 가장 깊게 파고듭니다. 관계 심화와 신규 확장 사이의 균형을 볼 지점입니다.`,
+      metric: `${deepestBranch.avgCallsPerAccount}회`
+    },
+    {
       tone: 'warning',
       title: '편중 리스크',
-      body: `${lead.name}은(는) ${lead.topProduct} 비중이 ${lead.topProductShare}%입니다. 성과는 높아도 포트폴리오 편중 관리가 필요합니다.`,
-      metric: `${lead.topProductShare}%`
-    });
-  }
+      body: `${concentrationRep.name}은(는) ${concentrationRep.topProduct} 비중이 ${concentrationRep.topProductShare}%입니다. 성과는 좋지만 포트폴리오 편중 리스크가 큽니다.`,
+      metric: `${concentrationRep.topProductShare}%`
+    },
+    {
+      tone: 'positive',
+      title: '사업부 온도차',
+      body: `${leadingDivision.name}은(는) ${leadingDivision.calls.toLocaleString('ko-KR')}콜로 ${leadingDivision.share}%를 차지합니다. 반대로 ${trailingDivision.name}은(는) ${trailingDivision.share}%에 머물러 확장 여지가 큽니다.`,
+      metric: `${leadingDivision.share}%`
+    },
+    {
+      tone: 'focus',
+      title: '월간 피크 데이',
+      body: `${mostActiveDay.date}에 ${mostActiveDay.calls.toLocaleString('ko-KR')}콜로 월중 최대치가 나왔습니다. 캠페인이나 현장 배치와 겹쳐보면 설명력이 커집니다.`,
+      metric: `${mostActiveDay.calls.toLocaleString('ko-KR')}콜`
+    }
+  ];
+}
 
-  insights.push({
-    tone: 'positive',
-    title: '월간 피크 데이',
-    body: `${mostActiveDay.date}에 ${mostActiveDay.calls.toLocaleString('ko-KR')}콜로 월중 최대치가 나왔습니다. 캠페인, 조직 운영, 현장 배치와 연결해서 해석할 수 있습니다.`,
-    metric: `${mostActiveDay.calls.toLocaleString('ko-KR')}콜`
-  });
+function createActionQueue(input) {
+  const {
+    branchRows,
+    repRows,
+    productRows,
+    totalCalls,
+    unlabeledProductCalls
+  } = input;
 
-  return insights;
+  const strongestBranch = branchRows[0];
+  const underperformBranch = [...branchRows]
+    .filter((item) => item.reps >= 4)
+    .sort((left, right) => left.avgCallsPerRep - right.avgCallsPerRep)[0];
+  const dataQualityBranch = [...branchRows]
+    .filter((item) => item.calls >= 1000)
+    .sort((left, right) => right.unlabeledShare - left.unlabeledShare)[0];
+  const concentrationRep = [...repRows]
+    .filter((item) => item.calls >= 120)
+    .sort((left, right) => right.topProductShare - left.topProductShare)[0];
+  const topNonBlankProduct = productRows.find((item) => item.product !== '미분류') || productRows[0];
+
+  return [
+    {
+      tone: 'positive',
+      title: '확산할 우수사례',
+      ownerType: 'branch',
+      ownerId: strongestBranch.branch,
+      ownerLabel: strongestBranch.branch,
+      body: `${strongestBranch.branch}은(는) ${strongestBranch.calls.toLocaleString('ko-KR')}콜, 담당자 1인당 평균 ${strongestBranch.avgCallsPerRep}콜로 가장 높은 생산성을 보입니다.`,
+      metric: `${strongestBranch.avgCallsPerRep}콜/인`
+    },
+    {
+      tone: 'warning',
+      title: '운영 점검 우선',
+      ownerType: 'branch',
+      ownerId: underperformBranch.branch,
+      ownerLabel: underperformBranch.branch,
+      body: `${underperformBranch.branch}은(는) 활동량이 낮습니다. 팀 전체가 아닌 특정 인력 이슈인지, 지점 구조 이슈인지 drill-down이 필요합니다.`,
+      metric: `${underperformBranch.avgCallsPerRep}콜/인`
+    },
+    {
+      tone: 'warning',
+      title: '데이터 품질 보강',
+      ownerType: 'branch',
+      ownerId: dataQualityBranch.branch,
+      ownerLabel: dataQualityBranch.branch,
+      body: `${dataQualityBranch.branch}은(는) 미분류 품목 비중이 가장 높습니다. 입력 룰만 정리해도 해석력이 바로 올라갑니다.`,
+      metric: `${dataQualityBranch.unlabeledShare}%`
+    },
+    {
+      tone: 'focus',
+      title: '편중 관리 필요',
+      ownerType: 'rep',
+      ownerId: concentrationRep.repId,
+      ownerLabel: concentrationRep.name,
+      body: `${concentrationRep.name}은(는) ${concentrationRep.topProduct} 중심 실행 비중이 큽니다. 코칭 시 포트폴리오 다변화 포인트를 같이 봐야 합니다.`,
+      metric: `${concentrationRep.topProductShare}%`
+    },
+    {
+      tone: 'focus',
+      title: '상품 전략 축',
+      ownerType: 'product',
+      ownerId: topNonBlankProduct.product,
+      ownerLabel: topNonBlankProduct.product,
+      body: `${topNonBlankProduct.product}은(는) 미분류를 제외하면 가장 큰 축입니다. 지점별 편차를 보면 확산과 보완 포인트가 같이 보입니다.`,
+      metric: `${topNonBlankProduct.share}%`
+    },
+    {
+      tone: 'warning',
+      title: '공통 정비 과제',
+      ownerType: 'global',
+      ownerId: 'global',
+      ownerLabel: '전체',
+      body: `품목 공백 ${unlabeledProductCalls.toLocaleString('ko-KR')}건은 전체 ${toShare(unlabeledProductCalls, totalCalls)}%입니다. 이 한 항목만 정리해도 SOV 해석 정확도가 커집니다.`,
+      metric: `${toShare(unlabeledProductCalls, totalCalls)}%`
+    }
+  ];
 }
 
 function createDataModel(rows) {
@@ -243,8 +323,9 @@ function createDataModel(rows) {
 
     const repKey = `${repId}:${repName}`;
     const accountKey = accountCode || `account:${accountName}`;
-    const hcpKey = hcpCode || `hcp:${row['의료인'] || '미분류'}`;
+    const hcpKey = hcpCode || `hcp:${normaliseText(row['의료인'], '미분류')}`;
     const repAccountKey = `${repKey}|${accountKey}|${hcpKey}`;
+    const accountLabel = `${accountName}${specialty !== '미분류' ? ` · ${specialty}` : ''}`;
 
     months.add(formatMonth(date));
     allRepIds.add(repKey);
@@ -280,7 +361,8 @@ function createDataModel(rows) {
       accounts: new Set(),
       hcps: new Set(),
       products: new Map(),
-      specialties: new Map()
+      specialties: new Map(),
+      repCounts: new Map()
     }));
     branchEntry.calls += 1;
     branchEntry.reps.add(repKey);
@@ -288,6 +370,7 @@ function createDataModel(rows) {
     branchEntry.hcps.add(hcpKey);
     incrementCounter(branchEntry.products, product);
     incrementCounter(branchEntry.specialties, specialty);
+    incrementCounter(branchEntry.repCounts, repKey);
 
     const repEntry = ensureCounterEntry(repStats, repKey, () => ({
       repId,
@@ -300,7 +383,8 @@ function createDataModel(rows) {
       hcps: new Set(),
       products: new Map(),
       specialties: new Map(),
-      days: new Set()
+      days: new Set(),
+      accountCounts: new Map()
     }));
     repEntry.calls += 1;
     repEntry.accounts.add(accountKey);
@@ -308,18 +392,23 @@ function createDataModel(rows) {
     repEntry.days.add(date);
     incrementCounter(repEntry.products, product);
     incrementCounter(repEntry.specialties, specialty);
+    incrementCounter(repEntry.accountCounts, accountLabel);
 
     const productEntry = ensureCounterEntry(productStats, product, () => ({
       product,
       calls: 0,
       branches: new Set(),
       reps: new Set(),
-      divisions: new Map()
+      divisions: new Map(),
+      branchCounts: new Map(),
+      repCounts: new Map()
     }));
     productEntry.calls += 1;
     productEntry.branches.add(branch);
     productEntry.reps.add(repKey);
     incrementCounter(productEntry.divisions, division);
+    incrementCounter(productEntry.branchCounts, branch);
+    incrementCounter(productEntry.repCounts, repKey);
 
     const specialtyEntry = ensureCounterEntry(specialtyStats, specialty, () => ({
       specialty,
@@ -352,6 +441,7 @@ function createDataModel(rows) {
   const divisionCards = [...divisionStats.values()]
     .map((entry) => {
       const [topProduct, topProductCalls] = getTopPair(entry.products);
+      const unlabeledCalls = entry.products.get('미분류') || 0;
       return {
         name: entry.division,
         calls: entry.calls,
@@ -361,30 +451,8 @@ function createDataModel(rows) {
         accounts: entry.accounts.size,
         avgCallsPerRep: toRatio(entry.calls, entry.reps.size),
         topProduct,
-        topProductShare: toShare(topProductCalls, entry.calls)
-      };
-    })
-    .sort((left, right) => right.calls - left.calls);
-
-  const branchRows = [...branchStats.values()]
-    .map((entry) => {
-      const [topProduct, topProductCalls] = getTopPair(entry.products);
-      const [topSpecialty] = getTopPair(entry.specialties);
-      return {
-        division: entry.division,
-        department: entry.department,
-        branch: entry.branch,
-        calls: entry.calls,
-        share: toShare(entry.calls, totalCalls),
-        reps: entry.reps.size,
-        accounts: entry.accounts.size,
-        hcps: entry.hcps.size,
-        products: entry.products.size,
-        avgCallsPerRep: toRatio(entry.calls, entry.reps.size),
-        avgCallsPerAccount: toRatio(entry.calls, entry.accounts.size, 2),
-        topProduct,
         topProductShare: toShare(topProductCalls, entry.calls),
-        topSpecialty
+        unlabeledShare: toShare(unlabeledCalls, entry.calls)
       };
     })
     .sort((left, right) => right.calls - left.calls);
@@ -393,6 +461,7 @@ function createDataModel(rows) {
     .map((entry) => {
       const [topProduct, topProductCalls] = getTopPair(entry.products);
       const [topSpecialty] = getTopPair(entry.specialties);
+      const unlabeledCalls = entry.products.get('미분류') || 0;
       return {
         repId: entry.repId,
         name: entry.name,
@@ -405,9 +474,62 @@ function createDataModel(rows) {
         products: entry.products.size,
         activeDays: entry.days.size,
         avgCallsPerAccount: toRatio(entry.calls, entry.accounts.size, 2),
+        avgCallsPerDay: toRatio(entry.calls, entry.days.size, 1),
         topProduct,
         topProductShare: toShare(topProductCalls, entry.calls),
-        topSpecialty
+        topSpecialty,
+        unlabeledShare: toShare(unlabeledCalls, entry.calls),
+        topProducts: takeTopRows(sortedCounterEntries(entry.products), 5, ([product, calls]) => ({
+          product,
+          calls,
+          share: toShare(calls, entry.calls)
+        })),
+        topAccounts: takeTopRows(sortedCounterEntries(entry.accountCounts), 5, ([account, calls]) => ({
+          account,
+          calls,
+          share: toShare(calls, entry.calls)
+        }))
+      };
+    })
+    .sort((left, right) => right.calls - left.calls);
+
+  const repByKey = new Map(repRows.map((item) => [`${item.repId}:${item.name}`, item]));
+
+  const branchRows = [...branchStats.values()]
+    .map((entry) => {
+      const [topProduct, topProductCalls] = getTopPair(entry.products);
+      const [topSpecialty] = getTopPair(entry.specialties);
+      const unlabeledCalls = entry.products.get('미분류') || 0;
+      return {
+        division: entry.division,
+        department: entry.department,
+        branch: entry.branch,
+        calls: entry.calls,
+        share: toShare(entry.calls, totalCalls),
+        reps: entry.reps.size,
+        accounts: entry.accounts.size,
+        hcps: entry.hcps.size,
+        products: entry.products.size,
+        avgCallsPerRep: toRatio(entry.calls, entry.reps.size),
+        avgCallsPerAccount: toRatio(entry.calls, entry.accounts.size, 2),
+        topProduct,
+        topProductShare: toShare(topProductCalls, entry.calls),
+        topSpecialty,
+        unlabeledShare: toShare(unlabeledCalls, entry.calls),
+        topProducts: takeTopRows(sortedCounterEntries(entry.products), 5, ([product, calls]) => ({
+          product,
+          calls,
+          share: toShare(calls, entry.calls)
+        })),
+        topReps: takeTopRows(sortedCounterEntries(entry.repCounts), 5, ([repKey, calls]) => {
+          const rep = repByKey.get(repKey);
+          return {
+            repId: rep?.repId || repKey,
+            name: rep?.name || repKey,
+            calls,
+            share: toShare(calls, entry.calls)
+          };
+        })
       };
     })
     .sort((left, right) => right.calls - left.calls);
@@ -424,7 +546,22 @@ function createDataModel(rows) {
         share: toShare(entry.calls, totalCalls),
         branches: entry.branches.size,
         reps: entry.reps.size,
-        divisionBreakdown
+        divisionBreakdown,
+        topBranches: takeTopRows(sortedCounterEntries(entry.branchCounts), 5, ([branch, calls]) => ({
+          branch,
+          calls,
+          share: toShare(calls, entry.calls)
+        })),
+        topReps: takeTopRows(sortedCounterEntries(entry.repCounts), 5, ([repKey, calls]) => {
+          const rep = repByKey.get(repKey);
+          return {
+            repId: rep?.repId || repKey,
+            name: rep?.name || repKey,
+            branch: rep?.branch || '',
+            calls,
+            share: toShare(calls, entry.calls)
+          };
+        })
       };
     })
     .sort((left, right) => right.calls - left.calls);
@@ -453,22 +590,89 @@ function createDataModel(rows) {
     };
   });
 
+  const branchDetails = branchRows.map((branch) => ({
+    id: branch.branch,
+    type: 'branch',
+    label: branch.branch,
+    division: branch.division,
+    department: branch.department,
+    summary: `${branch.department} · ${branch.division}`,
+    metrics: [
+      { label: 'CALL', value: branch.calls },
+      { label: '담당자', value: branch.reps },
+      { label: '계정당 콜', value: branch.avgCallsPerAccount },
+      { label: '미분류', value: `${branch.unlabeledShare}%` }
+    ],
+    narrative: `${branch.branch}은(는) 담당자 ${branch.reps}명이 ${branch.calls.toLocaleString('ko-KR')}콜을 만들고 있습니다. 대표 품목은 ${branch.topProduct}이며 지점 내 편차와 미분류 비중을 함께 보는 게 좋습니다.`,
+    topProducts: branch.topProducts,
+    topReps: branch.topReps
+  }));
+
+  const repDetails = repRows.map((rep) => ({
+    id: rep.repId,
+    type: 'rep',
+    label: rep.name,
+    division: rep.division,
+    department: rep.department,
+    branch: rep.branch,
+    summary: `${rep.branch} · ${rep.division}`,
+    metrics: [
+      { label: 'CALL', value: rep.calls },
+      { label: '활동일', value: rep.activeDays },
+      { label: '일평균', value: rep.avgCallsPerDay },
+      { label: '편중', value: `${rep.topProductShare}%` }
+    ],
+    narrative: `${rep.name}은(는) ${rep.branch}에서 ${rep.calls.toLocaleString('ko-KR')}콜을 기록했습니다. ${rep.topProduct} 비중이 ${rep.topProductShare}%로 가장 크고, 주력 계정 몇 곳이 전체 실행을 많이 끌고 갑니다.`,
+    topProducts: rep.topProducts,
+    topAccounts: rep.topAccounts
+  }));
+
+  const productDetails = productRows.map((product) => ({
+    id: product.product,
+    type: 'product',
+    label: product.product,
+    summary: `${product.branches}개 지점 · ${product.reps}명 담당자`,
+    metrics: [
+      { label: 'CALL', value: product.calls },
+      { label: 'SOV', value: `${product.share}%` },
+      { label: '지점', value: product.branches },
+      { label: '담당자', value: product.reps }
+    ],
+    narrative: `${product.product}은(는) 전체 ${product.calls.toLocaleString('ko-KR')}콜을 만들었습니다. 상위 지점 몇 곳과 상위 담당자 몇 명이 흐름을 강하게 만들고 있습니다.`,
+    topBranches: product.topBranches,
+    topReps: product.topReps
+  }));
+
   const unlabeledProductCalls = productRows.find((item) => item.product === '미분류')?.calls || 0;
   const topBranch = branchRows[0];
   const topRep = repRows[0];
   const topProduct = productRows[0];
-  const medianBranchCalls = branchRows[Math.floor(branchRows.length / 2)]?.calls || 0;
   const weakestBranch = [...branchRows]
-    .filter((item) => item.reps >= 3)
-    .sort((left, right) => left.calls - right.calls)[0] || branchRows[branchRows.length - 1];
+    .filter((item) => item.reps >= 4)
+    .sort((left, right) => left.avgCallsPerRep - right.avgCallsPerRep)[0] || branchRows[branchRows.length - 1];
   const deepestBranch = [...branchRows]
     .filter((item) => item.accounts >= 30)
     .sort((left, right) => right.avgCallsPerAccount - left.avgCallsPerAccount)[0] || topBranch;
-  const specialistReps = repRows
-    .filter((item) => item.calls >= 80 && item.topProductShare >= 55)
-    .sort((left, right) => right.topProductShare - left.topProductShare)
-    .slice(0, 6);
+  const concentrationRep = [...repRows]
+    .filter((item) => item.calls >= 120)
+    .sort((left, right) => right.topProductShare - left.topProductShare)[0] || topRep;
   const mostActiveDay = [...dailySeries].sort((left, right) => right.calls - left.calls)[0];
+  const focusReps = repRows
+    .filter((item) => item.calls >= 120 && item.topProductShare >= 45)
+    .sort((left, right) => right.topProductShare - left.topProductShare)
+    .slice(0, 10);
+  const productBranchMatrix = productRows
+    .filter((item) => item.product !== '미분류')
+    .slice(0, 6)
+    .map((item) => ({
+      product: item.product,
+      totalCalls: item.calls,
+      rows: item.topBranches.map((branch) => ({
+        branch: branch.branch,
+        calls: branch.calls,
+        share: branch.share
+      }))
+    }));
 
   return {
     meta: {
@@ -497,19 +701,30 @@ function createDataModel(rows) {
     productRows,
     specialtyRows,
     visitDepth,
+    branchDetails,
+    repDetails,
+    productDetails,
+    productBranchMatrix,
     insights: buildInsights({
-      totalCalls,
       topBranch,
       topRep,
       topProduct,
       unlabeledProductCalls,
-      medianBranchCalls,
+      totalCalls,
       weakestBranch,
       deepestBranch,
-      specialistReps,
-      mostActiveDay
+      concentrationRep,
+      mostActiveDay,
+      divisionCards
     }),
-    focusReps: specialistReps,
+    actionQueue: createActionQueue({
+      branchRows,
+      repRows,
+      productRows,
+      totalCalls,
+      unlabeledProductCalls
+    }),
+    focusReps,
     mapping: {
       availableNow: [
         '사업부/부문/지점/담당자별 CALL',
@@ -517,7 +732,8 @@ function createDataModel(rows) {
         '거래처/HCP 기반 방문 깊이',
         '지점별 포트폴리오 편중',
         '반복 방문 강도와 재방문 분포',
-        '진료과 기반 현장 믹스'
+        '진료과 기반 현장 믹스',
+        '지점/담당자 drill-down'
       ],
       needsMasterData: [
         '월 목표와 달성률',
